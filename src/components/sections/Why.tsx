@@ -9,7 +9,7 @@ export const Why = () => {
   return (
     <section id="why" className="relative py-28 md:py-40 bg-background">
       <div className="container">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-12 gap-14 lg:gap-20">
           <div className="lg:col-span-5">
             <Reveal>
               <span className="label-eyebrow">{t.why.eyebrow}</span>
@@ -20,15 +20,18 @@ export const Why = () => {
             </Reveal>
           </div>
 
-          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-border/40">
+          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-foreground/10">
             {t.why.items.map((item, i) => {
               const Icon = icons[i];
               return (
-                <Reveal key={i} delay={i * 0.08} className="bg-background">
-                  <div className="p-8 lg:p-10 h-full group transition-colors hover:bg-card">
-                    <Icon className="text-primary mb-6 transition-transform duration-500 group-hover:scale-110" size={32} strokeWidth={1.2} />
+                <Reveal key={i} delay={i * 0.08} className="bg-card">
+                  <div className="p-8 lg:p-10 h-full group transition-colors hover:bg-primary/5 relative">
+                    <div className="absolute top-6 right-6 font-serif italic text-sm text-primary">0{i + 1}</div>
+                    <div className="h-12 w-12 rounded-sm bg-primary/10 grid place-items-center mb-6 transition-all duration-500 group-hover:bg-primary">
+                      <Icon className="text-primary transition-colors group-hover:text-primary-foreground" size={22} strokeWidth={1.4} />
+                    </div>
                     <h3 className="font-serif text-2xl text-foreground mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                    <p className="text-foreground/60 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </Reveal>
               );

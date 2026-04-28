@@ -35,27 +35,27 @@ export const Header = () => {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
         scrolled
-          ? "bg-background/85 backdrop-blur-xl border-b border-border/60 py-3"
-          : "bg-transparent py-5"
+          ? "bg-background/90 backdrop-blur-xl border-b border-border py-3"
+          : "bg-background/60 backdrop-blur-md py-4"
       )}
     >
       <div className="container flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3 group">
-          <div className="relative h-9 w-9 rounded-sm bg-gradient-gold grid place-items-center shadow-gold">
-            <span className="font-serif text-lg text-primary-foreground font-semibold">C</span>
-          </div>
-          <div className="leading-tight hidden sm:block">
-            <div className="font-serif text-base text-foreground">{t.brand}</div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">Tourist Transport</div>
+        {/* Logo placeholder — ready to host the company logo image */}
+        <a href="#top" className="flex items-center gap-4 group">
+          <div className="relative h-12 w-[180px] sm:w-[220px] border border-foreground/15 bg-card flex items-center justify-center overflow-hidden group-hover:border-primary transition-colors">
+            <span className="text-[9px] uppercase tracking-[0.3em] text-muted-foreground group-hover:text-primary transition-colors">
+              {t.brand} · Logo
+            </span>
+            <span className="absolute top-0 left-0 h-1 w-6 bg-primary" />
           </div>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="text-[11px] uppercase tracking-[0.25em] font-medium text-foreground/70 hover:text-foreground transition-colors duration-300 relative after:absolute after:left-0 after:-bottom-1.5 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
             >
               {l.label}
             </a>
@@ -63,7 +63,7 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-1 border border-border/60 rounded-full px-1 py-1">
+          <div className="hidden md:flex items-center gap-1 border border-foreground/15 rounded-full px-1 py-1 bg-card">
             {langs.map((l) => (
               <button
                 key={l.code}
@@ -72,13 +72,20 @@ export const Header = () => {
                   "text-[11px] tracking-widest uppercase px-2.5 py-1 rounded-full transition-all",
                   lang === l.code
                     ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    : "text-foreground/60 hover:text-foreground"
                 )}
               >
                 {l.label}
               </button>
             ))}
           </div>
+
+          <a
+            href="#contact"
+            className="hidden md:inline-flex items-center gap-2 bg-primary hover:bg-primary-glow text-primary-foreground px-5 py-2.5 text-[11px] uppercase tracking-[0.25em] font-semibold shadow-gold transition-colors"
+          >
+            {t.cta.quote}
+          </a>
 
           <button
             onClick={() => setOpen((v) => !v)}
@@ -93,7 +100,7 @@ export const Header = () => {
       {/* Mobile drawer */}
       <div
         className={cn(
-          "lg:hidden overflow-hidden transition-all duration-500 bg-background/95 backdrop-blur-xl border-t border-border/40",
+          "lg:hidden overflow-hidden transition-all duration-500 bg-background/95 backdrop-blur-xl border-t border-border",
           open ? "max-h-[600px]" : "max-h-0"
         )}
       >
@@ -103,7 +110,7 @@ export const Header = () => {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="py-3 font-serif text-2xl text-foreground border-b border-border/40"
+              className="py-3 font-serif text-3xl text-foreground border-b border-border/60 hover:text-primary transition-colors"
             >
               {l.label}
             </a>
@@ -117,7 +124,7 @@ export const Header = () => {
                   "text-xs tracking-widest uppercase px-4 py-2 rounded-full border transition-all",
                   lang === l.code
                     ? "bg-primary text-primary-foreground border-primary"
-                    : "border-border text-muted-foreground"
+                    : "border-foreground/15 text-foreground/70"
                 )}
               >
                 {l.label}

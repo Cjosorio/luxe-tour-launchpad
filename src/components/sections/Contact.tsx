@@ -13,6 +13,7 @@ export const Contact = () => {
     date: "",
     service: "",
     vehicle: "",
+    city: "",
     message: "",
   });
 
@@ -23,6 +24,7 @@ export const Contact = () => {
         ...form,
         service: form.service || "—",
         vehicle: form.vehicle || t.contact.anyVehicle,
+        city: form.city || "—",
         message: form.message || "—",
       })
     );
@@ -127,6 +129,13 @@ export const Contact = () => {
                     </option>
                   ))}
                 </select>
+                <input
+                  placeholder={t.contact.city}
+                  value={form.city}
+                  onChange={(e) => setForm({ ...form, city: e.target.value })}
+                  maxLength={120}
+                  className={inputCls}
+                />
                 <textarea
                   rows={3}
                   placeholder={t.contact.message}

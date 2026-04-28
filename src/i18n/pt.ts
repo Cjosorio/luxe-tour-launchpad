@@ -111,6 +111,7 @@ export const pt: Dict = {
     date: "Data do serviço",
     service: "Tipo de serviço",
     vehicle: "Veículo preferido",
+    city: "Cidade / Destino",
     message: "Detalhes adicionais",
     selectOption: "Selecione uma opção",
     anyVehicle: "Qualquer / a recomendar",
@@ -126,7 +127,7 @@ export const pt: Dict = {
     floating: "Fale conosco no WhatsApp",
     defaultMsg: "Olá, gostaria de informações sobre seus serviços de transporte.",
     quoteMsg: (data) =>
-      `Olá Castellanos, gostaria de uma cotação:%0A%0A• Nome: ${data.name}%0A• Telefone: ${data.phone}%0A• Data: ${data.date}%0A• Serviço: ${data.service}%0A• Veículo: ${data.vehicle}%0A• Detalhes: ${data.message}`,
+      `Olá Castellanos, gostaria de uma cotação:%0A%0A• Nome: ${data.name}%0A• Telefone: ${data.phone}%0A• Data: ${data.date}%0A• Serviço: ${data.service}%0A• Veículo: ${data.vehicle}%0A• Cidade: ${data.city}%0A• Detalhes: ${data.message}`,
     fleetMsg: (name) => `Olá Castellanos, quero cotar o veículo ${name}.`,
   },
 };

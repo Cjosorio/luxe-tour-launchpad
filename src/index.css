@@ -2,65 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Transporte Turístico Castellanos — Luxury cinematic design system.
+/* Transporte Turístico Castellanos — Editorial Luminous White.
+   Paleta: paper (blanco hueso), gold (amarillo dorado vivo), ink (negro tinta).
    All colors MUST be HSL. */
 
 @layer base {
   :root {
-    /* Surfaces */
-    --background: 0 0% 4%;            /* #0A0A0A grafito profundo */
-    --foreground: 40 30% 96%;         /* blanco hueso cálido */
+    /* Surfaces — paper & ink */
+    --background: 40 33% 98%;          /* #FAF9F6 papel */
+    --foreground: 0 0% 7%;             /* #121212 tinta */
 
-    --card: 0 0% 7%;                  /* #121212 */
-    --card-foreground: 40 30% 96%;
+    --card: 0 0% 100%;                 /* blanco puro para tarjetas */
+    --card-foreground: 0 0% 7%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 40 30% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
 
     /* Brand: amarillo dorado */
-    --primary: 45 85% 53%;            /* #E8B923 */
-    --primary-foreground: 0 0% 5%;
-    --primary-glow: 48 96% 62%;       /* dorado más cálido */
+    --primary: 45 85% 53%;             /* #E8B923 */
+    --primary-foreground: 0 0% 7%;
+    --primary-glow: 48 100% 62%;       /* #FFD23F */
+    --primary-soft: 48 100% 92%;       /* crema dorada suave */
 
-    --secondary: 0 0% 12%;            /* gris oscuro elegante */
-    --secondary-foreground: 40 30% 96%;
+    --secondary: 40 20% 94%;           /* gris cálido muy claro */
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 40 8% 65%;
+    --muted: 40 15% 94%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 45 85% 53%;
-    --accent-foreground: 0 0% 5%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 40 30% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 14%;
+    --border: 0 0% 90%;
+    --input: 0 0% 88%;
     --ring: 45 85% 53%;
 
     --radius: 0.25rem;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 85% 53%), hsl(48 96% 62%));
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 7%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 4% / 0.3) 0%, hsl(0 0% 4% / 0.85) 70%, hsl(0 0% 4%) 100%);
-    --gradient-radial-gold: radial-gradient(ellipse at center, hsl(45 85% 53% / 0.18) 0%, transparent 60%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 53%), hsl(48 100% 62%));
+    --gradient-sun: linear-gradient(180deg, hsl(48 100% 62%) 0%, hsl(45 85% 53%) 100%);
+    --gradient-paper: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(40 20% 94%) 100%);
+    --gradient-hero-fade: linear-gradient(180deg, transparent 0%, hsl(40 33% 98% / 0.6) 70%, hsl(40 33% 98%) 100%);
+    --gradient-radial-gold: radial-gradient(ellipse at top right, hsl(45 85% 53% / 0.15) 0%, transparent 55%);
 
     /* Shadows */
-    --shadow-gold: 0 20px 60px -20px hsl(45 85% 53% / 0.45);
-    --shadow-elegant: 0 30px 80px -30px hsl(0 0% 0% / 0.8);
-    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.6);
+    --shadow-gold: 0 20px 50px -20px hsl(45 85% 53% / 0.45);
+    --shadow-elegant: 0 30px 60px -30px hsl(0 0% 0% / 0.2);
+    --shadow-card: 0 12px 40px -15px hsl(0 0% 0% / 0.12);
+    --shadow-postcard: 10px 10px 0 0 hsl(0 0% 7% / 0.08);
 
     /* Motion */
     --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 40 30% 96%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 7%;
     --sidebar-primary: 45 85% 53%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 40 30% 96%;
-    --sidebar-border: 0 0% 16%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 40 20% 94%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 0 0% 90%;
     --sidebar-ring: 45 85% 53%;
   }
 }
@@ -76,30 +80,19 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Instrument Sans', system-ui, sans-serif;
     font-feature-settings: "ss01", "cv11";
   }
 
   h1, h2, h3, h4, .font-serif {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Bodoni Moda', Georgia, serif;
     font-weight: 500;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
   }
 
   ::selection {
-    background: hsl(var(--primary) / 0.3);
+    background: hsl(var(--primary) / 0.35);
     color: hsl(var(--foreground));
-  }
-
-  /* Subtle film grain over dark surfaces */
-  .grain::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.06;
-    mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 }
 
@@ -115,7 +108,18 @@
   }
 
   .label-eyebrow {
-    @apply uppercase tracking-[0.3em] text-xs font-medium text-primary;
+    @apply uppercase tracking-[0.35em] text-[11px] font-semibold text-foreground;
+  }
+
+  .label-eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 1.75rem;
+    height: 1px;
+    background: hsl(var(--primary));
+    vertical-align: middle;
+    margin-right: 0.75rem;
+    transform: translateY(-1px);
   }
 
   .hover-lift {
@@ -123,11 +127,27 @@
   }
   .hover-lift:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-gold);
+    box-shadow: var(--shadow-elegant);
   }
 
   .gold-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.6), transparent);
+    background: linear-gradient(90deg, hsl(var(--primary)), transparent);
+  }
+
+  .editorial-rule {
+    height: 1px;
+    background: hsl(var(--foreground) / 0.1);
+  }
+
+  /* Subtle paper grain */
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 }

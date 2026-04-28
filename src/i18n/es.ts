@@ -175,6 +175,7 @@ export const es = {
     date: "Fecha del servicio",
     service: "Tipo de servicio",
     vehicle: "Vehículo preferido",
+    city: "Ciudad / Destino",
     message: "Detalles adicionales",
     selectOption: "Selecciona una opción",
     anyVehicle: "Cualquiera / a recomendar",
@@ -190,7 +191,7 @@ export const es = {
     floating: "Escríbenos por WhatsApp",
     defaultMsg: "Hola, me gustaría solicitar información sobre sus servicios de transporte.",
     quoteMsg: (data: Record<string, string>) =>
-      `Hola Castellanos, quiero solicitar una cotización:%0A%0A• Nombre: ${data.name}%0A• Teléfono: ${data.phone}%0A• Fecha: ${data.date}%0A• Servicio: ${data.service}%0A• Vehículo: ${data.vehicle}%0A• Detalles: ${data.message}`,
+      `Hola Castellanos, quiero solicitar una cotización:%0A%0A• Nombre: ${data.name}%0A• Teléfono: ${data.phone}%0A• Fecha: ${data.date}%0A• Servicio: ${data.service}%0A• Vehículo: ${data.vehicle}%0A• Ciudad: ${data.city}%0A• Detalles: ${data.message}`,
     fleetMsg: (name: string) =>
       `Hola Castellanos, me interesa cotizar el vehículo ${name}.`,
   },

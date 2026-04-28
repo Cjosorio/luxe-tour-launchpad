@@ -30,36 +30,50 @@ export const Contact = () => {
   };
 
   const inputCls =
-    "w-full bg-transparent border-b border-border/80 px-0 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors text-base";
+    "w-full bg-transparent border-b border-foreground/20 px-0 py-3 text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-primary transition-colors text-base";
 
   return (
-    <section id="contact" className="relative py-28 md:py-40 bg-card overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial-gold opacity-40 pointer-events-none" />
-      <div className="container max-w-6xl relative">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
-          <div className="lg:col-span-5">
+    <section id="contact" className="relative py-28 md:py-40 bg-background overflow-hidden">
+      <div className="container max-w-7xl relative">
+        <div className="grid lg:grid-cols-12 gap-0 border border-foreground/10 shadow-elegant bg-card">
+          {/* LEFT — yellow block with headline & logo area */}
+          <div className="lg:col-span-5 bg-primary p-10 lg:p-14 flex flex-col justify-between min-h-[560px] relative overflow-hidden">
+            <div className="absolute -bottom-20 -right-20 w-64 h-64 border border-primary-foreground/10 rounded-full pointer-events-none" />
+            <div className="absolute -top-12 -left-12 w-40 h-40 border border-primary-foreground/10 rounded-full pointer-events-none" />
             <Reveal>
-              <span className="label-eyebrow">{t.contact.eyebrow}</span>
-              <h2 className="mt-6 font-serif text-5xl md:text-6xl lg:text-7xl leading-[1] text-foreground text-balance">
+              <span className="uppercase tracking-[0.35em] text-[11px] font-semibold text-primary-foreground before:content-[''] before:inline-block before:w-7 before:h-px before:bg-primary-foreground/60 before:mr-3 before:align-middle">
+                {t.contact.eyebrow}
+              </span>
+              <h2 className="mt-6 font-serif text-5xl md:text-6xl leading-[1] text-primary-foreground text-balance">
                 {t.contact.title}
               </h2>
-              <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
+              <p className="mt-8 text-base text-primary-foreground/80 leading-relaxed max-w-sm">
                 {t.contact.subtitle}
               </p>
-              <div className="gold-divider mt-10 max-w-[120px]" />
+            </Reveal>
+
+            <div className="relative mt-12 space-y-6">
+              <div className="h-20 w-40 border border-dashed border-primary-foreground/40 bg-primary-foreground/5 flex items-center justify-center">
+                <span className="text-[9px] uppercase tracking-[0.3em] text-primary-foreground/60">
+                  Logo Castellanos
+                </span>
+              </div>
               <a
                 href={buildWhatsAppLink(t.whatsapp.defaultMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 inline-flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
+                className="inline-flex items-center gap-3 text-primary-foreground border-b border-primary-foreground pb-1 hover:gap-5 transition-all group"
               >
-                <span className="text-sm tracking-[0.2em] uppercase">{t.cta.whatsappLong}</span>
-                <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                <span className="text-[11px] tracking-[0.25em] uppercase font-semibold">
+                  {t.cta.whatsappLong}
+                </span>
+                <ArrowRight size={16} />
               </a>
-            </Reveal>
+            </div>
           </div>
 
-          <div className="lg:col-span-7">
+          {/* RIGHT — form */}
+          <div className="lg:col-span-7 p-10 lg:p-14 bg-card">
             <Reveal delay={0.1}>
               <form onSubmit={handleSubmit} className="space-y-7">
                 <div className="grid sm:grid-cols-2 gap-7">
@@ -85,7 +99,7 @@ export const Contact = () => {
                     placeholder={t.contact.date}
                     value={form.date}
                     onChange={(e) => setForm({ ...form, date: e.target.value })}
-                    className={`${inputCls} appearance-none [color-scheme:dark]`}
+                    className={`${inputCls} appearance-none`}
                   />
                   <select
                     value={form.service}
@@ -94,7 +108,7 @@ export const Contact = () => {
                   >
                     <option value="">{t.contact.service}</option>
                     {t.services.items.map((s) => (
-                      <option key={s.title} value={s.title} className="bg-background">
+                      <option key={s.title} value={s.title} className="bg-card">
                         {s.title}
                       </option>
                     ))}
@@ -106,9 +120,9 @@ export const Contact = () => {
                   className={`${inputCls} cursor-pointer`}
                 >
                   <option value="">{t.contact.vehicle}</option>
-                  <option value={t.contact.anyVehicle} className="bg-background">{t.contact.anyVehicle}</option>
+                  <option value={t.contact.anyVehicle} className="bg-card">{t.contact.anyVehicle}</option>
                   {fleet.map((v) => (
-                    <option key={v.id} value={v.name} className="bg-background">
+                    <option key={v.id} value={v.name} className="bg-card">
                       {v.name} — {v.capacity} {t.fleet.pax}
                     </option>
                   ))}
@@ -122,7 +136,7 @@ export const Contact = () => {
                 />
                 <button
                   type="submit"
-                  className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-gold text-primary-foreground font-medium tracking-wide rounded-sm shadow-gold hover:scale-[1.02] transition-transform"
+                  className="group inline-flex items-center gap-3 px-10 py-4 bg-foreground text-background font-semibold tracking-[0.2em] uppercase text-xs rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   {t.cta.send}
                   <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />

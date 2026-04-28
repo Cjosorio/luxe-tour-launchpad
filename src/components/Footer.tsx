@@ -5,22 +5,20 @@ import { SOCIAL } from "@/data/config";
 export const Footer = () => {
   const { t } = useI18n();
   return (
-    <footer className="relative bg-background border-t border-border/60 py-16">
+    <footer className="relative bg-foreground text-background py-20">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-sm bg-gradient-gold grid place-items-center shadow-gold">
-                <span className="font-serif text-lg text-primary-foreground font-semibold">C</span>
-              </div>
-              <div>
-                <div className="font-serif text-lg text-foreground">{t.brandFull}</div>
-                <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
-                  Premium Fleet
-                </div>
-              </div>
+            {/* Logo upload zone */}
+            <div className="h-16 w-52 border border-dashed border-background/25 bg-background/5 flex items-center justify-center">
+              <span className="text-[9px] uppercase tracking-[0.3em] text-background/50">
+                {t.brand} · Logo
+              </span>
             </div>
-            <p className="mt-6 text-muted-foreground max-w-md leading-relaxed">{t.footer.tagline}</p>
+            <div className="mt-8 font-serif text-3xl md:text-4xl text-background max-w-md leading-tight">
+              {t.brandFull}
+            </div>
+            <p className="mt-4 text-background/60 max-w-md leading-relaxed text-sm">{t.footer.tagline}</p>
           </div>
 
           <div>
@@ -35,7 +33,7 @@ export const Footer = () => {
                 { href: "#contact", label: t.nav.contact },
               ].map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  <a href={l.href} className="text-background/80 hover:text-primary transition-colors text-sm">
                     {l.label}
                   </a>
                 </li>
@@ -59,7 +57,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="h-10 w-10 rounded-full border border-border grid place-items-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+                  className="h-10 w-10 rounded-full border border-background/30 grid place-items-center text-background/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
                 >
                   <Icon size={16} />
                 </a>
@@ -68,11 +66,11 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-14 pt-8 border-t border-border/40 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground tracking-wide">
+        <div className="mt-14 pt-8 border-t border-background/15 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-background/50 tracking-wide">
             © {new Date().getFullYear()} {t.brandFull}. {t.footer.rights}
           </p>
-          <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+          <p className="text-[10px] tracking-[0.3em] uppercase text-background/50">
             Crafted with precision
           </p>
         </div>

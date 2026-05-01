@@ -5,7 +5,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export const Faq = () => {
   const { t } = useI18n();
   return (
-    <section className="relative py-28 md:py-40 bg-background">
+    <section className="relative py-28 md:py-36 bg-background overflow-hidden">
+      <div aria-hidden className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none" />
       <div className="container max-w-5xl">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">

@@ -30,11 +30,12 @@ export const Contact = () => {
   };
 
   const inputCls =
-    "w-full bg-transparent border-b border-border/80 px-0 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors text-base";
+    "w-full bg-transparent border-b border-border px-0 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-base";
 
   return (
-    <section id="contact" className="relative py-28 md:py-40 bg-card overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial-gold opacity-40 pointer-events-none" />
+    <section id="contact" className="relative py-28 md:py-36 bg-muted overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-radial-gold opacity-60 pointer-events-none" />
+      <div aria-hidden className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none" />
       <div className="container max-w-6xl relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           <div className="lg:col-span-5">
@@ -85,7 +86,7 @@ export const Contact = () => {
                     placeholder={t.contact.date}
                     value={form.date}
                     onChange={(e) => setForm({ ...form, date: e.target.value })}
-                    className={`${inputCls} appearance-none [color-scheme:dark]`}
+                    className={`${inputCls} appearance-none`}
                   />
                   <select
                     value={form.service}
@@ -94,7 +95,7 @@ export const Contact = () => {
                   >
                     <option value="">{t.contact.service}</option>
                     {t.services.items.map((s) => (
-                      <option key={s.title} value={s.title} className="bg-background">
+                      <option key={s.title} value={s.title}>
                         {s.title}
                       </option>
                     ))}
@@ -106,9 +107,9 @@ export const Contact = () => {
                   className={`${inputCls} cursor-pointer`}
                 >
                   <option value="">{t.contact.vehicle}</option>
-                  <option value={t.contact.anyVehicle} className="bg-background">{t.contact.anyVehicle}</option>
+                  <option value={t.contact.anyVehicle}>{t.contact.anyVehicle}</option>
                   {fleet.map((v) => (
-                    <option key={v.id} value={v.name} className="bg-background">
+                    <option key={v.id} value={v.name}>
                       {v.name} — {v.capacity} {t.fleet.pax}
                     </option>
                   ))}

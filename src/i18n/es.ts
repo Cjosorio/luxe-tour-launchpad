@@ -1,6 +1,6 @@
 export const es = {
   brand: "Castellanos",
-  brandFull: "Transporte Turístico Castellanos",
+  brandFull: "Transporte Castellanos",
   nav: {
     why: "Nosotros",
     services: "Servicios",
@@ -19,150 +19,97 @@ export const es = {
     send: "Enviar por WhatsApp",
   },
   hero: {
-    eyebrow: "Transporte ejecutivo & turístico",
-    title: "Viajes seguros, cómodos y puntuales.",
-    titleAccent: "Sin excepciones.",
+    eyebrow: "Honduras • Centroamérica • Desde 2001",
+    title: "Transporte",
+    titleAccent: "Castellanos",
     subtitle:
-      "Más de una década moviendo pasajeros con la elegancia, la disciplina y la atención que merecen.",
+      "25 años conectando personas y destinos con seguridad, confort y puntualidad.",
     scroll: "Descubre",
+    stats: [
+      { n: "25", l: "Años de experiencia" },
+      { n: "+5K", l: "Viajes realizados" },
+      { n: "100%", l: "Compromiso" },
+    ],
   },
   why: {
-    eyebrow: "Por qué elegirnos",
-    title: "Estándares que se sienten desde el primer minuto.",
+    eyebrow: "¿Quiénes somos?",
+    title: "El aliado estratégico de movilidad en Centroamérica.",
+    intro:
+      "Somos una empresa hondureña con 25 años de experiencia liderando el sector de transporte turístico privado. Nuestra flota moderna —de camionetas de lujo a unidades Pullman— está diseñada para ofrecer una experiencia donde la comodidad, la tecnología y la seguridad vial son nuestra prioridad absoluta.",
     items: [
-      {
-        title: "Conductores profesionales",
-        desc: "Choferes certificados, presentables y con amplia experiencia en rutas turísticas.",
-      },
-      {
-        title: "Flota moderna",
-        desc: "Vehículos recientes, climatizados y mantenidos bajo los más altos estándares.",
-      },
-      {
-        title: "Puntualidad garantizada",
-        desc: "Operación cronometrada. Llegamos antes para que tú nunca esperes.",
-      },
-      {
-        title: "Atención personalizada",
-        desc: "Cada servicio se diseña a la medida del pasajero, del grupo y del destino.",
-      },
+      { title: "Trayectoria", desc: "25 años de confianza nos respaldan." },
+      { title: "Alcance regional", desc: "Conectamos Honduras con toda Centroamérica." },
+      { title: "Seguridad total", desc: "Seguros de daños y conductores expertos certificados." },
+      { title: "Confort a bordo", desc: "WiFi, cargadores y climatización en cada unidad." },
     ],
   },
   services: {
     eyebrow: "Servicios",
     title: "Diseñados para cada tipo de viaje.",
     items: [
-      {
-        title: "Traslados al aeropuerto",
-        desc: "Recogida y entrega puntual, monitoreo de vuelos y atención 24/7.",
-      },
-      {
-        title: "Excursiones turísticas",
-        desc: "Rutas guiadas y traslados a los destinos más emblemáticos.",
-      },
-      {
-        title: "Transporte corporativo",
-        desc: "Movilidad ejecutiva para empresas, convenciones y eventos.",
-      },
-      {
-        title: "Eventos y grupos",
-        desc: "Bodas, congresos y traslados grupales con coordinación impecable.",
-      },
+      { title: "Traslados al aeropuerto", desc: "Recogida y entrega puntual, monitoreo de vuelos y atención 24/7." },
+      { title: "Excursiones turísticas", desc: "Rutas guiadas y traslados a los destinos más emblemáticos." },
+      { title: "Transporte corporativo", desc: "Movilidad ejecutiva para empresas, convenciones y eventos." },
+      { title: "Eventos y grupos", desc: "Bodas, congresos y traslados grupales con coordinación impecable." },
     ],
   },
   fleet: {
     eyebrow: "Nuestra flota",
-    title: "Vehículos seleccionados con criterio.",
+    title: "Cinco unidades. Una sola promesa: excelencia.",
     subtitle:
-      "Cada unidad está pensada para una experiencia: desde traslados ejecutivos privados hasta excursiones grupales de larga distancia.",
+      "Desde traslados ejecutivos VIP hasta excursiones internacionales: tenemos la unidad ideal para cada experiencia.",
     capacityLabel: "Capacidad",
     featuresLabel: "Características",
+    idealLabel: "Ideal para",
     pax: "pasajeros",
   },
   story: {
-    eyebrow: "Nuestra historia",
+    eyebrow: "Misión y Visión",
     title: "Una tradición construida kilómetro a kilómetro.",
     paragraph:
-      "Lo que comenzó como un servicio familiar de transporte se ha convertido en una marca reconocida por la disciplina, la calidez humana y el detalle. Cada viaje cuenta una historia; nosotros nos aseguramos de que sea memorable.",
+      "Nacimos en 2001 con el compromiso de conectar personas y destinos de manera segura. Hoy, en 2026, evolucionamos para convertirnos en el aliado estratégico de movilidad de toda Centroamérica.",
     missionTitle: "Misión",
     mission:
-      "Brindar experiencias de transporte seguras, puntuales y cómodas, superando las expectativas de cada pasajero.",
+      "Proveer soluciones de transporte turístico y privado de clase mundial, garantizando viajes seguros, confortables y puntuales mediante una flota de última generación y un equipo humano altamente capacitado.",
     visionTitle: "Visión",
     vision:
-      "Ser la empresa de transporte turístico de referencia por su excelencia operativa y su trato humano.",
+      "Consolidarnos para 2030 como la empresa de transporte privado referente en Centroamérica, reconocida por nuestra excelencia operativa, innovación tecnológica y compromiso con la seguridad del pasajero.",
   },
   testimonials: {
     eyebrow: "Testimonios",
     title: "La confianza se gana viaje a viaje.",
     items: [
-      {
-        quote:
-          "Servicio impecable de principio a fin. Llegamos siempre a tiempo y los conductores fueron extraordinariamente atentos.",
-        author: "María Pérez",
-        role: "Tour grupal — 22 pax",
-      },
-      {
-        quote:
-          "Contratamos su servicio para nuestro evento corporativo. Profesionalismo absoluto, vehículos impecables.",
-        author: "Carlos Rodríguez",
-        role: "Director, Grupo Andino",
-      },
-      {
-        quote:
-          "La mejor decisión para nuestra luna de miel. Cada detalle fue cuidado con cariño.",
-        author: "Laura & Diego",
-        role: "Traslados privados",
-      },
-      {
-        quote:
-          "Llevamos años usando Castellanos para nuestros traslados al aeropuerto. Nunca un retraso.",
-        author: "Andrea Salinas",
-        role: "Cliente frecuente",
-      },
+      { quote: "Servicio impecable de principio a fin. Llegamos siempre a tiempo y los conductores fueron extraordinariamente atentos.", author: "María Pérez", role: "Tour grupal — 22 pax" },
+      { quote: "Contratamos su servicio para nuestro evento corporativo. Profesionalismo absoluto, vehículos impecables.", author: "Carlos Rodríguez", role: "Director, Grupo Andino" },
+      { quote: "La mejor decisión para nuestra luna de miel. Cada detalle fue cuidado con cariño.", author: "Laura & Diego", role: "Traslados privados" },
+      { quote: "Llevamos años usando Castellanos para nuestros traslados al aeropuerto. Nunca un retraso.", author: "Andrea Salinas", role: "Cliente frecuente" },
+      { quote: "Operación impecable para nuestro congreso de 200 personas. Los recomendamos sin dudar.", author: "Jorge Mendoza", role: "Coordinador de eventos" },
     ],
   },
   coverage: {
     eyebrow: "Cobertura",
-    title: "Operamos en las principales rutas turísticas.",
+    title: "De Honduras a toda Centroamérica.",
     description:
-      "Cubrimos traslados urbanos, interprovinciales y excursiones a los destinos más solicitados.",
+      "Operamos traslados urbanos, interdepartamentales y rutas internacionales hacia los destinos más solicitados de la región.",
     zones: [
-      "Aeropuerto Internacional",
-      "Centro de la ciudad",
+      "Tegucigalpa & San Pedro Sula",
+      "Aeropuertos internacionales",
       "Hoteles y resorts",
-      "Rutas de excursión",
-      "Eventos y convenciones",
-      "Traslados interprovinciales",
+      "Roatán, Copán y La Ceiba",
+      "Guatemala, El Salvador y Nicaragua",
+      "Eventos corporativos",
     ],
   },
   faq: {
     eyebrow: "Preguntas frecuentes",
     title: "Lo que necesitas saber.",
     items: [
-      {
-        q: "¿Cómo solicito una cotización?",
-        a: "Puedes escribirnos por WhatsApp o llenar el formulario de cotización. Respondemos en menos de 30 minutos en horario hábil.",
-      },
-      {
-        q: "¿Qué métodos de pago aceptan?",
-        a: "Aceptamos efectivo, transferencias bancarias y pagos con tarjeta. Para servicios corporativos manejamos crédito empresarial.",
-      },
-      {
-        q: "¿Con cuánta anticipación debo reservar?",
-        a: "Recomendamos reservar con al menos 48 horas de anticipación, aunque atendemos servicios urgentes según disponibilidad.",
-      },
-      {
-        q: "¿Puedo cancelar o modificar una reserva?",
-        a: "Sí. Las cancelaciones con más de 24 horas de anticipación no tienen costo. Consulta nuestras políticas completas al reservar.",
-      },
-      {
-        q: "¿Los vehículos están asegurados?",
-        a: "Todos nuestros vehículos cuentan con seguro vigente y mantenimiento certificado. La seguridad es nuestra prioridad.",
-      },
-      {
-        q: "¿Brindan servicio fuera de la ciudad?",
-        a: "Sí, operamos traslados interprovinciales y excursiones de larga distancia.",
-      },
+      { q: "¿Cómo solicito una cotización?", a: "Puedes escribirnos por WhatsApp o llenar el formulario de cotización. Respondemos en menos de 30 minutos en horario hábil." },
+      { q: "¿Qué métodos de pago aceptan?", a: "Aceptamos efectivo, transferencias bancarias y pagos con tarjeta. Para servicios corporativos manejamos crédito empresarial." },
+      { q: "¿Con cuánta anticipación debo reservar?", a: "Recomendamos reservar con al menos 48 horas de anticipación, aunque atendemos servicios urgentes según disponibilidad." },
+      { q: "¿Puedo cancelar o modificar una reserva?", a: "Sí. Las cancelaciones con más de 24 horas de anticipación no tienen costo. Consulta nuestras políticas completas al reservar." },
+      { q: "¿Los vehículos están asegurados?", a: "Todos nuestros vehículos cuentan con seguro de daños vigente y mantenimiento certificado. La seguridad es nuestra prioridad." },
+      { q: "¿Operan rutas internacionales?", a: "Sí, brindamos servicio a Guatemala, El Salvador, Nicaragua y otros países de Centroamérica." },
     ],
   },
   contact: {
@@ -180,7 +127,7 @@ export const es = {
     anyVehicle: "Cualquiera / a recomendar",
   },
   footer: {
-    tagline: "Transporte turístico premium desde hace más de una década.",
+    tagline: "Transporte turístico premium en Honduras y Centroamérica desde 2001.",
     rights: "Todos los derechos reservados.",
     contact: "Contacto",
     follow: "Síguenos",

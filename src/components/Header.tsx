@@ -35,18 +35,24 @@ export const Header = () => {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
         scrolled
-          ? "bg-background/85 backdrop-blur-xl border-b border-border/60 py-3"
+          ? "bg-background/95 backdrop-blur-xl border-b border-border shadow-card py-3"
           : "bg-transparent py-5"
       )}
     >
       <div className="container flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 group">
-          <div className="relative h-9 w-9 rounded-sm bg-gradient-gold grid place-items-center shadow-gold">
-            <span className="font-serif text-lg text-primary-foreground font-semibold">C</span>
+          <div className="relative h-10 w-10 rounded-sm bg-gradient-gold grid place-items-center shadow-gold transition-transform group-hover:rotate-6">
+            <span className="font-serif text-xl text-primary-foreground font-semibold">C</span>
           </div>
           <div className="leading-tight hidden sm:block">
-            <div className="font-serif text-base text-foreground">{t.brand}</div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">Tourist Transport</div>
+            <div className={cn(
+              "font-serif text-base transition-colors",
+              scrolled ? "text-foreground" : "text-background drop-shadow"
+            )}>{t.brandFull}</div>
+            <div className={cn(
+              "text-[10px] tracking-[0.25em] uppercase transition-colors",
+              scrolled ? "text-muted-foreground" : "text-background/80"
+            )}>Honduras • CA</div>
           </div>
         </a>
 
@@ -55,7 +61,10 @@ export const Header = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className={cn(
+                "text-sm transition-colors duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full",
+                scrolled ? "text-muted-foreground hover:text-foreground" : "text-background/90 hover:text-primary drop-shadow"
+              )}
             >
               {l.label}
             </a>
@@ -63,7 +72,10 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-1 border border-border/60 rounded-full px-1 py-1">
+          <div className={cn(
+            "hidden md:flex items-center gap-1 rounded-full px-1 py-1 transition-colors",
+            scrolled ? "border border-border bg-background" : "border border-background/40 bg-background/20 backdrop-blur"
+          )}>
             {langs.map((l) => (
               <button
                 key={l.code}
@@ -72,7 +84,9 @@ export const Header = () => {
                   "text-[11px] tracking-widest uppercase px-2.5 py-1 rounded-full transition-all",
                   lang === l.code
                     ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    : scrolled
+                      ? "text-muted-foreground hover:text-foreground"
+                      : "text-background hover:text-primary"
                 )}
               >
                 {l.label}
@@ -82,7 +96,10 @@ export const Header = () => {
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden text-foreground p-2"
+            className={cn(
+              "lg:hidden p-2 transition-colors",
+              scrolled ? "text-foreground" : "text-background"
+            )}
             aria-label="Menu"
           >
             {open ? <X size={22} /> : <Menu size={22} />}

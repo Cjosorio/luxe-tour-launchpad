@@ -8,48 +8,83 @@ export interface Vehicle {
   id: string;
   name: string;
   capacity: number;
+  capacityLabel?: { es: string; en: string; pt: string };
   cover: string;
   gallery: string[];
   description: { es: string; en: string; pt: string };
   features: { es: string[]; en: string[]; pt: string[] };
+  ideal: { es: string; en: string; pt: string };
+  badge?: { es: string; en: string; pt: string };
 }
 
-// Note: gallery uses placeholders by reusing cover + interior. Replace with real photos later.
 const buildGallery = (cover: string) => [cover, interior, cover, interior, cover];
 
 export const fleet: Vehicle[] = [
   {
-    id: "pullman",
-    name: "Pullman",
+    id: "pullman-premium",
+    name: "Pullman Premium",
     capacity: 50,
     cover: pullman,
     gallery: buildGallery(pullman),
+    badge: { es: "Top de gama", en: "Top tier", pt: "Top de linha" },
     description: {
-      es: "Nuestro autocar de mayor capacidad. Ideal para grupos grandes, excursiones de larga distancia y servicios corporativos masivos. Confort total con asientos reclinables y amplio espacio para equipaje.",
-      en: "Our highest-capacity coach. Ideal for large groups, long-distance excursions and large corporate services. Total comfort with reclining seats and ample luggage space.",
-      pt: "Nosso ônibus de maior capacidade. Ideal para grupos grandes, excursões de longa distância e serviços corporativos massivos. Conforto total com poltronas reclináveis e amplo espaço para bagagem.",
+      es: "Nuestro autocar insignia con sanitario a bordo. Ideal para viajes largos internacionales y grupos exigentes que buscan máximo confort.",
+      en: "Our flagship coach with onboard restroom. Ideal for long international trips and demanding groups seeking maximum comfort.",
+      pt: "Nosso ônibus principal com sanitário a bordo. Ideal para viagens longas internacionais e grupos exigentes.",
     },
     features: {
-      es: ["Aire acondicionado", "Asientos reclinables", "Bodega amplia", "WiFi a bordo", "Sistema de audio/video"],
-      en: ["Air conditioning", "Reclining seats", "Large luggage hold", "Onboard WiFi", "Audio/video system"],
-      pt: ["Ar condicionado", "Poltronas reclináveis", "Porta-malas amplo", "WiFi a bordo", "Sistema de áudio/vídeo"],
+      es: ["Sanitario a bordo", "Televisión", "Aire acondicionado", "Cargadores USB", "Seguro de daños a terceros"],
+      en: ["Onboard restroom", "Television", "Air conditioning", "USB chargers", "Third-party insurance"],
+      pt: ["Sanitário a bordo", "Televisão", "Ar condicionado", "Carregadores USB", "Seguro de danos a terceiros"],
+    },
+    ideal: {
+      es: "Viajes largos internacionales",
+      en: "Long international trips",
+      pt: "Viagens longas internacionais",
+    },
+  },
+  {
+    id: "pullman-express",
+    name: "Pullman Express",
+    capacity: 49,
+    cover: pullman,
+    gallery: buildGallery(pullman),
+    description: {
+      es: "Autocar versátil para excursiones y eventos masivos. La opción perfecta cuando necesitas mover grupos grandes con eficiencia.",
+      en: "Versatile coach for excursions and massive events. The perfect choice when you need to move large groups efficiently.",
+      pt: "Ônibus versátil para excursões e eventos massivos. A opção perfeita para mover grupos grandes com eficiência.",
+    },
+    features: {
+      es: ["Televisión", "Aire acondicionado", "Cargadores USB", "Seguro de daños a terceros", "Bodega amplia"],
+      en: ["Television", "Air conditioning", "USB chargers", "Third-party insurance", "Large luggage hold"],
+      pt: ["Televisão", "Ar condicionado", "Carregadores USB", "Seguro de danos a terceiros", "Porta-malas amplo"],
+    },
+    ideal: {
+      es: "Excursiones y eventos masivos",
+      en: "Excursions and large events",
+      pt: "Excursões e eventos massivos",
     },
   },
   {
     id: "coaster",
     name: "Coaster",
-    capacity: 28,
+    capacity: 26,
     cover: coaster,
     gallery: buildGallery(coaster),
     description: {
-      es: "Mini bus premium para grupos medianos. Equilibrio perfecto entre capacidad y agilidad para excursiones turísticas y traslados grupales ejecutivos.",
-      en: "Premium minibus for medium groups. Perfect balance between capacity and agility for tourist excursions and executive group transfers.",
-      pt: "Minibus premium para grupos médios. Equilíbrio perfeito entre capacidade e agilidade para excursões turísticas e transferências em grupo executivas.",
+      es: "Mini bus premium con parrilla para equipaje. Equilibrio perfecto entre capacidad y agilidad para grupos medianos y turismo interno.",
+      en: "Premium minibus with luggage rack. Perfect balance between capacity and agility for medium groups and domestic tourism.",
+      pt: "Minibus premium com bagageiro. Equilíbrio perfeito entre capacidade e agilidade para grupos médios.",
     },
     features: {
-      es: ["Aire acondicionado", "Asientos individuales", "Equipaje en bodega", "Acceso panorámico", "Cinturones de seguridad"],
-      en: ["Air conditioning", "Individual seats", "Luggage hold", "Panoramic windows", "Safety belts"],
-      pt: ["Ar condicionado", "Poltronas individuais", "Porta-malas", "Janelas panorâmicas", "Cintos de segurança"],
+      es: ["Parrilla para equipaje", "Aire acondicionado", "Cargadores USB", "Asientos individuales", "Cinturones de seguridad"],
+      en: ["Luggage rack", "Air conditioning", "USB chargers", "Individual seats", "Safety belts"],
+      pt: ["Bagageiro", "Ar condicionado", "Carregadores USB", "Poltronas individuais", "Cintos de segurança"],
+    },
+    ideal: {
+      es: "Grupos medianos y turismo interno",
+      en: "Medium groups and domestic tourism",
+      pt: "Grupos médios e turismo interno",
     },
   },
   {
@@ -59,31 +94,47 @@ export const fleet: Vehicle[] = [
     cover: hiace,
     gallery: buildGallery(hiace),
     description: {
-      es: "Van ejecutiva ideal para grupos pequeños, traslados al aeropuerto y servicios corporativos. Discreta, ágil y elegante.",
-      en: "Executive van ideal for small groups, airport transfers and corporate services. Discreet, agile and elegant.",
-      pt: "Van executiva ideal para grupos pequenos, transferências do aeroporto e serviços corporativos. Discreta, ágil e elegante.",
+      es: "Van ejecutiva ágil y elegante. Perfecta para traslados ejecutivos, familias y grupos pequeños que valoran la discreción.",
+      en: "Agile and elegant executive van. Perfect for executive transfers, families and small groups that value discretion.",
+      pt: "Van executiva ágil e elegante. Perfeita para transferências executivas, famílias e grupos pequenos.",
     },
     features: {
-      es: ["Aire acondicionado", "Asientos cómodos", "Espacio para equipaje", "Conducción suave", "Acceso fácil"],
-      en: ["Air conditioning", "Comfortable seats", "Luggage space", "Smooth driving", "Easy access"],
-      pt: ["Ar condicionado", "Assentos confortáveis", "Espaço para bagagem", "Direção suave", "Fácil acesso"],
+      es: ["Aire acondicionado", "Cargadores USB", "Asientos cómodos", "Conducción ágil", "Acceso fácil"],
+      en: ["Air conditioning", "USB chargers", "Comfortable seats", "Agile driving", "Easy access"],
+      pt: ["Ar condicionado", "Carregadores USB", "Assentos confortáveis", "Direção ágil", "Fácil acesso"],
+    },
+    ideal: {
+      es: "Traslados ejecutivos y familias",
+      en: "Executive transfers and families",
+      pt: "Transferências executivas e famílias",
     },
   },
   {
-    id: "prado",
-    name: "Prado",
+    id: "luxury-vip",
+    name: "Luxury VIP",
     capacity: 6,
+    capacityLabel: {
+      es: "Land Cruiser Prado",
+      en: "Land Cruiser Prado",
+      pt: "Land Cruiser Prado",
+    },
     cover: prado,
     gallery: buildGallery(prado),
+    badge: { es: "Exclusivo", en: "Exclusive", pt: "Exclusivo" },
     description: {
-      es: "SUV de lujo para servicios privados, ejecutivos VIP y traslados exclusivos. La opción más refinada de nuestra flota.",
-      en: "Luxury SUV for private services, VIP executives and exclusive transfers. The most refined choice in our fleet.",
-      pt: "SUV de luxo para serviços privados, executivos VIP e transferências exclusivas. A opção mais refinada da nossa frota.",
+      es: "Land Cruiser Prado de lujo. Privacidad, confort total y la presencia que diplomáticos y traslados de alto nivel demandan.",
+      en: "Luxury Land Cruiser Prado. Privacy, total comfort and the presence demanded by diplomats and high-level transfers.",
+      pt: "Land Cruiser Prado de luxo. Privacidade, conforto total e a presença exigida por diplomatas e transferências de alto nível.",
     },
     features: {
-      es: ["Cuero premium", "Climatización dual", "4x4 todo terreno", "Privacidad total", "Conducción premium"],
-      en: ["Premium leather", "Dual climate control", "4x4 all-terrain", "Total privacy", "Premium drive"],
-      pt: ["Couro premium", "Climatização dual", "4x4 todo terreno", "Privacidade total", "Direção premium"],
+      es: ["Lujo total", "Privacidad absoluta", "Confort premium", "Cuero de alta gama", "Climatización dual"],
+      en: ["Total luxury", "Absolute privacy", "Premium comfort", "Top-grade leather", "Dual climate control"],
+      pt: ["Luxo total", "Privacidade absoluta", "Conforto premium", "Couro premium", "Climatização dual"],
+    },
+    ideal: {
+      es: "Diplomáticos y traslados de alto nivel",
+      en: "Diplomats and high-level transfers",
+      pt: "Diplomatas e transferências de alto nível",
     },
   },
 ];

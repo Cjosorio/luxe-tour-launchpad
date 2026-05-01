@@ -69,12 +69,15 @@ export default {
       },
       backgroundImage: {
         "gradient-gold": "var(--gradient-gold)",
-        "gradient-dark": "var(--gradient-dark)",
+        "gradient-blue": "var(--gradient-blue)",
+        "gradient-light": "var(--gradient-light)",
         "gradient-hero": "var(--gradient-hero)",
         "gradient-radial-gold": "var(--gradient-radial-gold)",
+        "gradient-radial-blue": "var(--gradient-radial-blue)",
       },
       boxShadow: {
         gold: "var(--shadow-gold)",
+        blue: "var(--shadow-blue)",
         elegant: "var(--shadow-elegant)",
         card: "var(--shadow-card)",
       },
@@ -115,6 +118,18 @@ export default {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        "float-y": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-12px)" },
+        },
+        "marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -124,6 +139,9 @@ export default {
         "scale-in": "scale-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both",
         "slow-zoom": "slow-zoom 18s ease-out both",
         "shimmer": "shimmer 3s linear infinite",
+        "float-y": "float-y 4s ease-in-out infinite",
+        "marquee": "marquee 40s linear infinite",
+        "spin-slow": "spin-slow 20s linear infinite",
       },
     },
   },

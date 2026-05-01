@@ -35,7 +35,7 @@ export const Fleet = () => {
           </div>
           <div className="lg:col-span-5 lg:pt-8">
             <Reveal delay={0.15}>
-              <p className="text-foreground/70 leading-relaxed">{t.fleet.subtitle}</p>
+              <p className="text-muted-foreground leading-relaxed">{t.fleet.subtitle}</p>
             </Reveal>
           </div>
         </div>
@@ -45,7 +45,7 @@ export const Fleet = () => {
             <Reveal key={v.id} delay={i * 0.08}>
               <button
                 onClick={() => open(v)}
-                className="group relative block w-full text-left aspect-[5/4] overflow-hidden rounded-sm shadow-card hover-lift bg-card"
+                className="group relative block w-full text-left aspect-[5/4] overflow-hidden rounded-sm shadow-card hover-lift"
               >
                 <img
                   src={v.cover}
@@ -53,19 +53,19 @@ export const Fleet = () => {
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.4s] group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/30 to-transparent" />
-                <div className="absolute top-6 right-6 h-11 w-11 rounded-full bg-background/90 backdrop-blur grid place-items-center text-foreground transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 shadow-card">
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+                <div className="absolute top-6 right-6 h-10 w-10 rounded-full bg-background/40 backdrop-blur-md border border-foreground/20 grid place-items-center text-foreground transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110">
                   <ArrowUpRight size={18} />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-8 lg:p-10 flex items-end justify-between gap-4">
                   <div>
-                    <h3 className="font-serif text-3xl md:text-4xl text-background">{v.name}</h3>
-                    <div className="mt-2 flex items-center gap-2 text-sm text-primary-glow">
+                    <h3 className="font-serif text-3xl md:text-4xl text-foreground">{v.name}</h3>
+                    <div className="mt-2 flex items-center gap-2 text-sm text-primary">
                       <Users size={14} />
                       <span>{v.capacity} {t.fleet.pax}</span>
                     </div>
                   </div>
-                  <span className="text-[10px] tracking-[0.3em] uppercase text-background/70">
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
                     0{i + 1}
                   </span>
                 </div>
@@ -83,12 +83,12 @@ export const Fleet = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="fixed inset-0 z-[60] bg-background/98 backdrop-blur-md overflow-y-auto"
+            className="fixed inset-0 z-[60] bg-background/95 backdrop-blur-md overflow-y-auto"
             onClick={close}
           >
             <button
               onClick={close}
-              className="fixed top-6 right-6 z-10 h-11 w-11 rounded-full bg-foreground text-background grid place-items-center hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="fixed top-6 right-6 z-10 h-11 w-11 rounded-full bg-card border border-border grid place-items-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Close"
             >
               <X size={20} />
@@ -104,7 +104,7 @@ export const Fleet = () => {
             >
               {/* Slider */}
               <div className="space-y-4">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-sm bg-secondary">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-sm bg-card">
                   <AnimatePresence mode="wait">
                     <motion.img
                       key={slide}
@@ -119,17 +119,17 @@ export const Fleet = () => {
                   </AnimatePresence>
                   <button
                     onClick={() => setSlide((s) => (s - 1 + active.gallery.length) % active.gallery.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-card/90 backdrop-blur grid place-items-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors shadow-card"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-background/60 backdrop-blur grid place-items-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <ChevronLeft size={20} />
                   </button>
                   <button
                     onClick={() => setSlide((s) => (s + 1) % active.gallery.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-card/90 backdrop-blur grid place-items-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors shadow-card"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-background/60 backdrop-blur grid place-items-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <ChevronRight size={20} />
                   </button>
-                  <div className="absolute bottom-4 right-4 text-xs tracking-widest text-foreground bg-card/90 backdrop-blur px-3 py-1 rounded-full shadow-card">
+                  <div className="absolute bottom-4 right-4 text-xs tracking-widest text-foreground/80 bg-background/60 backdrop-blur px-3 py-1 rounded-full">
                     {String(slide + 1).padStart(2, "0")} / {String(active.gallery.length).padStart(2, "0")}
                   </div>
                 </div>
@@ -152,12 +152,12 @@ export const Fleet = () => {
                 <h3 className="mt-4 font-serif text-5xl md:text-6xl text-foreground">
                   {active.name}
                 </h3>
-                <div className="mt-6 flex items-center gap-3 text-foreground">
+                <div className="mt-6 flex items-center gap-3 text-primary">
                   <Users size={18} />
                   <span className="font-medium">{active.capacity} {t.fleet.pax}</span>
                 </div>
                 <div className="gold-divider my-8 max-w-[120px]" />
-                <p className="text-foreground/70 leading-relaxed text-lg">
+                <p className="text-muted-foreground leading-relaxed text-lg">
                   {active.description[lang]}
                 </p>
 
@@ -179,7 +179,7 @@ export const Fleet = () => {
                   href={buildWhatsAppLink(t.whatsapp.fleetMsg(active.name))}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-10 inline-flex items-center gap-3 px-7 py-3.5 bg-foreground text-background font-medium rounded-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="mt-10 inline-flex items-center gap-3 px-7 py-3.5 bg-gradient-gold text-primary-foreground font-medium rounded-sm shadow-gold hover:scale-[1.02] transition-transform"
                 >
                   {t.cta.quoteThis}
                   <ArrowUpRight size={18} />

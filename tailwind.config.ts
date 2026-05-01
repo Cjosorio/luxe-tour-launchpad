@@ -64,21 +64,19 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        serif: ["'Bodoni Moda'", "Georgia", "serif"],
-        sans: ["'Instrument Sans'", "system-ui", "sans-serif"],
+        serif: ["'Cormorant Garamond'", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       backgroundImage: {
         "gradient-gold": "var(--gradient-gold)",
-        "gradient-sun": "var(--gradient-sun)",
-        "gradient-paper": "var(--gradient-paper)",
-        "gradient-hero-fade": "var(--gradient-hero-fade)",
+        "gradient-dark": "var(--gradient-dark)",
+        "gradient-hero": "var(--gradient-hero)",
         "gradient-radial-gold": "var(--gradient-radial-gold)",
       },
       boxShadow: {
         gold: "var(--shadow-gold)",
         elegant: "var(--shadow-elegant)",
         card: "var(--shadow-card)",
-        postcard: "var(--shadow-postcard)",
       },
       keyframes: {
         "accordion-down": {

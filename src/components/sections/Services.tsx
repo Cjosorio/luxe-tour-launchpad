@@ -10,9 +10,9 @@ const images = [airport, excursion, corporate, events];
 export const Services = () => {
   const { t } = useI18n();
   return (
-    <section id="services" className="relative py-28 md:py-40 bg-secondary">
+    <section id="services" className="relative py-28 md:py-40 bg-card">
       <div className="container">
-        <div className="max-w-3xl mb-16 md:mb-24 flex flex-col">
+        <div className="max-w-3xl mb-16 md:mb-24">
           <Reveal>
             <span className="label-eyebrow">{t.services.eyebrow}</span>
             <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground text-balance">
@@ -26,7 +26,7 @@ export const Services = () => {
             <Reveal key={i} delay={i * 0.1}>
               <a
                 href="#contact"
-                className="group relative block aspect-[4/3] overflow-hidden rounded-sm shadow-card hover-lift bg-card"
+                className="group relative block aspect-[4/3] overflow-hidden rounded-sm shadow-card hover-lift"
               >
                 <img
                   src={images[i]}
@@ -34,16 +34,16 @@ export const Services = () => {
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-foreground/10" />
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-500 mix-blend-overlay" />
-                <div className="absolute top-6 left-6 bg-primary text-primary-foreground px-3 py-1 text-[10px] tracking-[0.3em] uppercase font-semibold">
-                  0{i + 1}
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500" />
                 <div className="absolute inset-x-0 bottom-0 p-8 lg:p-10">
-                  <h3 className="font-serif text-3xl md:text-4xl text-background mb-3">
+                  <div className="text-[10px] tracking-[0.3em] uppercase text-primary mb-3">
+                    0{i + 1}
+                  </div>
+                  <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-background/80 max-w-md leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-muted-foreground max-w-md">{item.desc}</p>
                 </div>
               </a>
             </Reveal>

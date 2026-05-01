@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export const Faq = () => {
   const { t } = useI18n();
   return (
-    <section className="relative py-28 md:py-40 bg-secondary">
+    <section className="relative py-28 md:py-40 bg-background">
       <div className="container max-w-5xl">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
@@ -20,11 +20,11 @@ export const Faq = () => {
             <Reveal delay={0.1}>
               <Accordion type="single" collapsible className="w-full">
                 {t.faq.items.map((it, i) => (
-                  <AccordionItem key={i} value={`item-${i}`} className="border-b border-foreground/15">
-                    <AccordionTrigger className="text-left font-serif text-xl md:text-2xl text-foreground py-6 hover:text-primary hover:no-underline [&[data-state=open]]:text-primary">
+                  <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/60">
+                    <AccordionTrigger className="text-left font-serif text-xl md:text-2xl text-foreground py-6 hover:text-primary hover:no-underline">
                       {it.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-foreground/70 text-base leading-relaxed pb-6">
+                    <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
                       {it.a}
                     </AccordionContent>
                   </AccordionItem>

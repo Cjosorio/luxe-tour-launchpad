@@ -2,7 +2,7 @@ import type { Dict } from "./es";
 
 export const en: Dict = {
   brand: "Castellanos",
-  brandFull: "Castellanos Tourist Transport",
+  brandFull: "Castellanos Transport",
   nav: {
     why: "About",
     services: "Services",
@@ -21,21 +21,28 @@ export const en: Dict = {
     send: "Send via WhatsApp",
   },
   hero: {
-    eyebrow: "Executive & tourist transport",
-    title: "Safe, comfortable, on-time travel.",
-    titleAccent: "No exceptions.",
+    eyebrow: "Honduras • Central America • Since 2001",
+    title: "Transporte",
+    titleAccent: "Castellanos",
     subtitle:
-      "Over a decade moving passengers with the elegance, discipline and care they deserve.",
+      "25 years connecting people and destinations with safety, comfort and punctuality.",
     scroll: "Discover",
+    stats: [
+      { n: "25", l: "Years of experience" },
+      { n: "+5K", l: "Trips delivered" },
+      { n: "100%", l: "Commitment" },
+    ],
   },
   why: {
-    eyebrow: "Why choose us",
-    title: "Standards you feel from the first minute.",
+    eyebrow: "Who we are",
+    title: "Your strategic mobility partner in Central America.",
+    intro:
+      "We are a Honduran company with 25 years of experience leading the private tourist transport sector. Our modern fleet — from luxury SUVs to high-capacity Pullmans — is designed to deliver an experience where comfort, technology and road safety are our absolute priority.",
     items: [
-      { title: "Professional drivers", desc: "Certified, presentable chauffeurs with deep tourist-route experience." },
-      { title: "Modern fleet", desc: "Recent, air-conditioned vehicles maintained to the highest standards." },
-      { title: "Guaranteed punctuality", desc: "Clockwork operations. We arrive early so you never wait." },
-      { title: "Personal attention", desc: "Every service tailored to the passenger, the group and the destination." },
+      { title: "Track record", desc: "25 years of trust back us up." },
+      { title: "Regional reach", desc: "We connect Honduras with all of Central America." },
+      { title: "Total safety", desc: "Damage insurance and certified expert drivers." },
+      { title: "Onboard comfort", desc: "WiFi, chargers and AC in every vehicle." },
     ],
   },
   services: {
@@ -50,22 +57,25 @@ export const en: Dict = {
   },
   fleet: {
     eyebrow: "Our fleet",
-    title: "Vehicles chosen with intent.",
+    title: "Five units. One single promise: excellence.",
     subtitle:
-      "Each unit is built for an experience — from private executive transfers to long-distance group tours.",
+      "From VIP executive transfers to international excursions — we have the right unit for every experience.",
     capacityLabel: "Capacity",
     featuresLabel: "Features",
+    idealLabel: "Ideal for",
     pax: "passengers",
   },
   story: {
-    eyebrow: "Our story",
+    eyebrow: "Mission & Vision",
     title: "A tradition built mile by mile.",
     paragraph:
-      "What began as a family transport service has grown into a brand known for discipline, warmth and detail. Every trip tells a story — we make sure it is a memorable one.",
+      "We started in 2001 committed to safely connecting people and destinations. Today, in 2026, we have evolved to become the strategic mobility partner of all Central America.",
     missionTitle: "Mission",
-    mission: "Deliver safe, on-time and comfortable transport experiences that exceed every passenger's expectations.",
+    mission:
+      "To deliver world-class private and tourist transport solutions, guaranteeing safe, comfortable and punctual trips through a state-of-the-art fleet and a highly trained team.",
     visionTitle: "Vision",
-    vision: "To be the reference tourist transport company for operational excellence and human care.",
+    vision:
+      "To become by 2030 the leading private transport company in Central America, recognized for operational excellence, technological innovation and our commitment to passenger safety.",
   },
   testimonials: {
     eyebrow: "Testimonials",
@@ -75,19 +85,21 @@ export const en: Dict = {
       { quote: "We hired them for our corporate event. Absolute professionalism, immaculate vehicles.", author: "Carlos Rodríguez", role: "Director, Grupo Andino" },
       { quote: "The best decision for our honeymoon. Every detail was cared for with love.", author: "Laura & Diego", role: "Private transfers" },
       { quote: "We've been using Castellanos for airport transfers for years. Never a delay.", author: "Andrea Salinas", role: "Frequent client" },
+      { quote: "Flawless operation for our 200-person congress. We recommend them without a doubt.", author: "Jorge Mendoza", role: "Event coordinator" },
     ],
   },
   coverage: {
     eyebrow: "Coverage",
-    title: "We operate the main tourist routes.",
-    description: "We handle urban, interprovincial transfers and excursions to the most requested destinations.",
+    title: "From Honduras to all Central America.",
+    description:
+      "We operate urban, interdepartmental transfers and international routes to the most requested destinations in the region.",
     zones: [
-      "International airport",
-      "City center",
+      "Tegucigalpa & San Pedro Sula",
+      "International airports",
       "Hotels & resorts",
-      "Excursion routes",
-      "Events & conventions",
-      "Interprovincial transfers",
+      "Roatán, Copán and La Ceiba",
+      "Guatemala, El Salvador and Nicaragua",
+      "Corporate events",
     ],
   },
   faq: {
@@ -99,7 +111,7 @@ export const en: Dict = {
       { q: "How far in advance should I book?", a: "We recommend at least 48 hours, though we handle urgent requests subject to availability." },
       { q: "Can I cancel or modify a reservation?", a: "Yes. Cancellations 24+ hours in advance are free of charge. Full policy provided at booking." },
       { q: "Are the vehicles insured?", a: "All vehicles carry full insurance and certified maintenance. Safety is our priority." },
-      { q: "Do you operate outside the city?", a: "Yes, we cover interprovincial transfers and long-distance excursions." },
+      { q: "Do you operate international routes?", a: "Yes, we serve Guatemala, El Salvador, Nicaragua and other Central American countries." },
     ],
   },
   contact: {
@@ -116,7 +128,7 @@ export const en: Dict = {
     anyVehicle: "Any / recommend",
   },
   footer: {
-    tagline: "Premium tourist transport for over a decade.",
+    tagline: "Premium tourist transport in Honduras and Central America since 2001.",
     rights: "All rights reserved.",
     contact: "Contact",
     follow: "Follow us",

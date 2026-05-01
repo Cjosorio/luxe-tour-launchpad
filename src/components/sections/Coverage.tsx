@@ -34,16 +34,19 @@ export const Coverage = () => {
 
           <div className="lg:col-span-7">
             <Reveal delay={0.15}>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm shadow-elegant border border-border/60">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm shadow-elegant border border-border">
                 <iframe
                   title="Cobertura"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3604.0!2d-57.575926!3d-25.282131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2s!4v1700000000000"
-                  className="absolute inset-0 h-full w-full grayscale contrast-125"
-                  style={{ border: 0, filter: "invert(0.92) hue-rotate(180deg) grayscale(0.4)" }}
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3812420.0!2d-87.5!3d14.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2shn!4v1700000000000"
+                  className="absolute inset-0 h-full w-full"
+                  style={{ border: 0 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-primary/20" />
+                <div className="pointer-events-none absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 bg-background/95 backdrop-blur rounded-full shadow-card text-xs font-medium text-foreground">
+                  <MapPin size={12} className="text-primary" /> Honduras • Centroamérica
+                </div>
               </div>
             </Reveal>
           </div>

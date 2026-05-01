@@ -8,60 +8,65 @@
 @layer base {
   :root {
     /* Surfaces */
-    --background: 0 0% 4%;            /* #0A0A0A grafito profundo */
-    --foreground: 40 30% 96%;         /* blanco hueso cálido */
+    --background: 40 30% 98%;         /* blanco hueso */
+    --foreground: 220 35% 12%;        /* azul tinta profundo */
 
-    --card: 0 0% 7%;                  /* #121212 */
-    --card-foreground: 40 30% 96%;
+    --card: 0 0% 100%;                /* blanco puro */
+    --card-foreground: 220 35% 12%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 40 30% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 35% 12%;
 
     /* Brand: amarillo dorado */
-    --primary: 45 85% 53%;            /* #E8B923 */
-    --primary-foreground: 0 0% 5%;
-    --primary-glow: 48 96% 62%;       /* dorado más cálido */
+    --primary: 45 92% 52%;            /* #F2B91A amarillo vibrante */
+    --primary-foreground: 220 40% 12%;
+    --primary-glow: 48 96% 62%;       /* dorado cálido */
 
-    --secondary: 0 0% 12%;            /* gris oscuro elegante */
-    --secondary-foreground: 40 30% 96%;
+    /* Secondary: azul navy elegante (acento) */
+    --secondary: 218 70% 32%;         /* #1A3F8C azul royal */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 210 90% 56%;    /* azul brillante */
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 40 8% 65%;
+    --muted: 40 20% 94%;              /* crema muy claro */
+    --muted-foreground: 220 15% 40%;
 
-    --accent: 45 85% 53%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 218 70% 32%;            /* azul */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 40 30% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 14%;
-    --ring: 45 85% 53%;
+    --border: 220 20% 88%;
+    --input: 220 20% 92%;
+    --ring: 45 92% 52%;
 
     --radius: 0.25rem;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 85% 53%), hsl(48 96% 62%));
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 7%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 4% / 0.3) 0%, hsl(0 0% 4% / 0.85) 70%, hsl(0 0% 4%) 100%);
-    --gradient-radial-gold: radial-gradient(ellipse at center, hsl(45 85% 53% / 0.18) 0%, transparent 60%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 92% 52%), hsl(48 96% 62%));
+    --gradient-blue: linear-gradient(135deg, hsl(218 70% 32%), hsl(210 90% 46%));
+    --gradient-light: linear-gradient(180deg, hsl(40 30% 98%) 0%, hsl(40 25% 95%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(220 50% 8% / 0.55) 0%, hsl(220 45% 12% / 0.35) 50%, hsl(40 30% 98% / 0.95) 100%);
+    --gradient-radial-gold: radial-gradient(ellipse at center, hsl(45 92% 52% / 0.22) 0%, transparent 60%);
+    --gradient-radial-blue: radial-gradient(ellipse at top right, hsl(218 70% 45% / 0.15) 0%, transparent 60%);
 
     /* Shadows */
-    --shadow-gold: 0 20px 60px -20px hsl(45 85% 53% / 0.45);
-    --shadow-elegant: 0 30px 80px -30px hsl(0 0% 0% / 0.8);
-    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.6);
+    --shadow-gold: 0 20px 50px -18px hsl(45 92% 52% / 0.55);
+    --shadow-blue: 0 20px 50px -18px hsl(218 70% 32% / 0.35);
+    --shadow-elegant: 0 30px 70px -25px hsl(220 40% 20% / 0.18);
+    --shadow-card: 0 10px 35px -12px hsl(220 30% 25% / 0.12);
 
     /* Motion */
     --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 40 30% 96%;
-    --sidebar-primary: 45 85% 53%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 40 30% 96%;
-    --sidebar-border: 0 0% 16%;
-    --sidebar-ring: 45 85% 53%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 35% 12%;
+    --sidebar-primary: 45 92% 52%;
+    --sidebar-primary-foreground: 220 40% 12%;
+    --sidebar-accent: 40 20% 94%;
+    --sidebar-accent-foreground: 220 35% 12%;
+    --sidebar-border: 220 20% 88%;
+    --sidebar-ring: 45 92% 52%;
   }
 }
 

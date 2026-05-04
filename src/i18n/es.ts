@@ -23,7 +23,7 @@ export const es = {
     title: "Transporte",
     titleAccent: "Castellanos",
     subtitle:
-      "25 años conectando personas y destinos con seguridad, confort y puntualidad.",
+      "25 años con puntualidad, seguridad y confort en movimiento.",
     scroll: "Descubre",
     stats: [
       { n: "25", l: "Años de experiencia" },

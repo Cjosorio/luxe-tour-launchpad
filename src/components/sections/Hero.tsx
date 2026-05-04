@@ -59,15 +59,6 @@ export const Hero = () => {
             </span>
           </motion.div>
 
-          <h1 className="mt-8 font-serif text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[0.9] text-balance">
-            <span className="block text-background drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
-              {t.hero.title}
-            </span>
-            <span className="block italic gold-text mt-1">
-              {t.hero.titleAccent}
-            </span>
-          </h1>
-
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,25 +92,7 @@ export const Hero = () => {
             </a>
           </motion.div>
 
-          {/* Stats row */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.95 }}
-            className="mt-16 grid grid-cols-3 gap-6 max-w-2xl"
-          >
-            {t.hero.stats.map((s, i) => (
-              <div
-                key={s.l}
-                className="px-5 py-4 rounded-sm bg-background/85 backdrop-blur-md border-l-2 border-primary shadow-card"
-              >
-                <div className="font-serif text-3xl md:text-4xl gold-text">{s.n}</div>
-                <div className="mt-1 text-[10px] tracking-[0.2em] uppercase text-muted-foreground">
-                  {s.l}
-                </div>
-              </div>
-            ))}
-          </motion.div>
+          {/* Stats removed per request */}
         </motion.div>
 
         {/* Scroll indicator */}

@@ -48,6 +48,8 @@ export const pt: Dict = {
   services: {
     eyebrow: "Serviços",
     title: "Projetados para cada tipo de viagem.",
+    subtitle:
+      "Oferecemos serviços de transporte seguros, confiáveis e pontuais, adaptados às suas necessidades.",
     items: [
       { title: "Transferências do aeroporto", desc: "Coleta e entrega pontuais, monitoramento de voos e atendimento 24/7." },
       { title: "Excursões turísticas", desc: "Rotas guiadas e transferências para os destinos mais emblemáticos." },

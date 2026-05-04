@@ -21,6 +21,9 @@ export const Services = () => {
             <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground text-balance">
               {t.services.title}
             </h2>
+            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl">
+              {t.services.subtitle}
+            </p>
           </Reveal>
         </div>
 

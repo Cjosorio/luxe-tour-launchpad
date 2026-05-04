@@ -47,7 +47,7 @@ export const pt: Dict = {
   },
   services: {
     eyebrow: "Serviços",
-    title: "Projetados para cada tipo de viagem.",
+    title: "",
     subtitle:
       "Oferecemos serviços de transporte seguros, confiáveis e pontuais, adaptados às suas necessidades.",
     items: [
@@ -59,9 +59,8 @@ export const pt: Dict = {
   },
   fleet: {
     eyebrow: "Nossa frota",
-    title: "Cinco unidades. Uma única promessa: excelência.",
-    subtitle:
-      "De transferências executivas VIP a excursões internacionais — temos a unidade ideal para cada experiência.",
+    title: "Nossa frota é composta por veículos modernos, confortáveis e em excelentes condições, mantidos sob rigorosos controles de qualidade e segurança.",
+    subtitle: "",
     capacityLabel: "Capacidade",
     featuresLabel: "Características",
     idealLabel: "Ideal para",

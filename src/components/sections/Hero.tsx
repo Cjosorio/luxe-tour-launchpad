@@ -42,7 +42,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-5xl"
+          className="max-w-3xl mx-auto text-center flex flex-col items-center"
         >
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -63,7 +63,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-8 text-lg md:text-xl text-background/95 max-w-2xl text-pretty drop-shadow-md"
+            className="mt-8 text-lg md:text-xl text-background/95 max-w-2xl text-pretty drop-shadow-md mx-auto"
           >
             {t.hero.subtitle}
           </motion.p>
@@ -72,7 +72,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="mt-10 flex flex-col sm:flex-row gap-4"
+            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center"
           >
             <a
               href="#contact"

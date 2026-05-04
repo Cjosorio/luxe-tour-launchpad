@@ -46,6 +46,8 @@ export const es = {
   services: {
     eyebrow: "Servicios",
     title: "Diseñados para cada tipo de viaje.",
+    subtitle:
+      "Ofrecemos servicios de transporte seguros, confiables y puntuales, adaptados a tus necesidades.",
     items: [
       { title: "Traslados al aeropuerto", desc: "Recogida y entrega puntual, monitoreo de vuelos y atención 24/7." },
       { title: "Excursiones turísticas", desc: "Rutas guiadas y traslados a los destinos más emblemáticos." },

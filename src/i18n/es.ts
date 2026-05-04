@@ -45,7 +45,7 @@ export const es = {
   },
   services: {
     eyebrow: "Servicios",
-    title: "Diseñados para cada tipo de viaje.",
+    title: "",
     subtitle:
       "Ofrecemos servicios de transporte seguros, confiables y puntuales, adaptados a tus necesidades.",
     items: [
@@ -57,9 +57,8 @@ export const es = {
   },
   fleet: {
     eyebrow: "Nuestra flota",
-    title: "Cinco unidades. Una sola promesa: excelencia.",
-    subtitle:
-      "Desde traslados ejecutivos VIP hasta excursiones internacionales: tenemos la unidad ideal para cada experiencia.",
+    title: "Nuestra flota está conformada por vehículos modernos, cómodos y en excelentes condiciones, mantenidos bajo estrictos controles de calidad y seguridad.",
+    subtitle: "",
     capacityLabel: "Capacidad",
     featuresLabel: "Características",
     idealLabel: "Ideal para",

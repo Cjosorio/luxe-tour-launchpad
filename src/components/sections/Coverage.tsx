@@ -11,10 +11,10 @@ export const Coverage = () => {
           <div className="lg:col-span-5">
             <Reveal>
               <span className="label-eyebrow">{t.coverage.eyebrow}</span>
-              <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground text-balance">
+              <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance section-title">
                 {t.coverage.title}
               </h2>
-              <p className="mt-6 text-muted-foreground leading-relaxed">
+              <p className="mt-6 text-base md:text-lg lead-paragraph leading-relaxed">
                 {t.coverage.description}
               </p>
               <ul className="mt-10 space-y-4">

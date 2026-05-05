@@ -18,10 +18,10 @@ export const Services = () => {
         <div className="max-w-3xl mb-16 md:mb-24">
           <Reveal>
             <span className="label-eyebrow">{t.services.eyebrow}</span>
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground text-balance">
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance section-title">
               {t.services.title}
             </h2>
-            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl">
+            <p className="mt-6 text-base md:text-lg lead-paragraph max-w-2xl leading-relaxed">
               {t.services.subtitle}
             </p>
           </Reveal>

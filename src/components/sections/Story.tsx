@@ -45,10 +45,10 @@ export const Story = () => {
           <div className="lg:col-span-7 lg:pl-8">
             <Reveal>
               <span className="label-eyebrow">{t.story.eyebrow}</span>
-              <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground text-balance">
+              <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance section-title">
                 {t.story.title}
               </h2>
-              <p className="mt-8 text-lg text-muted-foreground leading-relaxed text-pretty max-w-2xl">
+              <p className="mt-8 text-lg lead-paragraph leading-relaxed text-pretty max-w-2xl">
                 {t.story.paragraph}
               </p>
             </Reveal>

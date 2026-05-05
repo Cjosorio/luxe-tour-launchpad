@@ -41,7 +41,7 @@ export const Fleet = () => {
         <div className="max-w-3xl mb-16 md:mb-24">
           <Reveal>
             <span className="label-eyebrow">{t.fleet.eyebrow}</span>
-            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="mt-6 text-base md:text-lg lead-paragraph max-w-2xl leading-relaxed">
               {t.fleet.title}
             </p>
           </Reveal>

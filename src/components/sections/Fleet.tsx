@@ -38,20 +38,13 @@ export const Fleet = () => {
       <div aria-hidden className="absolute -top-40 right-0 h-[30rem] w-[30rem] rounded-full bg-primary/10 blur-3xl pointer-events-none" />
 
       <div className="container relative">
-        <div className="grid lg:grid-cols-12 gap-12 mb-12">
-          <div className="lg:col-span-7">
-            <Reveal>
-              <span className="label-eyebrow">{t.fleet.eyebrow}</span>
-              <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground text-balance">
-                {t.fleet.title}
-              </h2>
-            </Reveal>
-          </div>
-          <div className="lg:col-span-5 lg:pt-8">
-            <Reveal delay={0.15}>
-              <p className="text-muted-foreground leading-relaxed">{t.fleet.subtitle}</p>
-            </Reveal>
-          </div>
+        <div className="max-w-3xl mb-16 md:mb-24">
+          <Reveal>
+            <span className="label-eyebrow">{t.fleet.eyebrow}</span>
+            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
+              {t.fleet.title}
+            </p>
+          </Reveal>
         </div>
 
         {/* Featured carousel */}

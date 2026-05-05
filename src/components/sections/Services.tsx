@@ -21,9 +21,9 @@ export const Services = () => {
           </div>
           <Reveal>
             <span className="eyebrow-chip">{t.services.eyebrow}</span>
-            <h2 className="mt-7 display-title text-5xl md:text-6xl lg:text-7xl text-balance">
+            <p className="mt-7 text-sm md:text-base lead-paragraph max-w-2xl leading-relaxed">
               {t.services.subtitle}
-            </h2>
+            </p>
             <div className="mt-8 flex items-center gap-4">
               <span className="accent-bar" />
               <span className="text-xs tracking-[0.3em] uppercase text-secondary font-semibold">

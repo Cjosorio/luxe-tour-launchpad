@@ -38,12 +38,21 @@ export const Fleet = () => {
       <div aria-hidden className="absolute -top-40 right-0 h-[30rem] w-[30rem] rounded-full bg-primary/10 blur-3xl pointer-events-none" />
 
       <div className="container relative">
-        <div className="max-w-3xl mb-16 md:mb-24">
+        <div className="max-w-3xl mb-16 md:mb-24 relative">
+          <div aria-hidden className="absolute -top-10 -left-6 font-serif text-[10rem] md:text-[14rem] leading-none text-primary/10 select-none pointer-events-none">
+            “
+          </div>
           <Reveal>
-            <span className="label-eyebrow">{t.fleet.eyebrow}</span>
-            <p className="mt-6 text-base md:text-lg lead-paragraph max-w-2xl leading-relaxed">
+            <span className="eyebrow-chip">{t.fleet.eyebrow}</span>
+            <h2 className="mt-7 display-title text-5xl md:text-6xl lg:text-7xl text-balance leading-[1.02]">
               {t.fleet.title}
-            </p>
+            </h2>
+            <div className="mt-8 flex items-center gap-4">
+              <span className="accent-bar" />
+              <span className="text-xs tracking-[0.3em] uppercase text-secondary font-semibold">
+                Calidad y seguridad
+              </span>
+            </div>
           </Reveal>
         </div>
 

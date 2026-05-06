@@ -1,5 +1,6 @@
 import pullman from "@/assets/pullman.jpg";
 import pullmanPremium from "@/assets/pullman-premium.jpg";
+import pullmanExpress from "@/assets/pullman-express.jpg";
 import hiace from "@/assets/hiace.jpg";
 import prado from "@/assets/prado.jpg";
 import coaster from "@/assets/coaster.jpg";
@@ -48,8 +49,8 @@ export const fleet: Vehicle[] = [
     id: "pullman-express",
     name: "Pullman Express",
     capacity: 49,
-    cover: pullman,
-    gallery: buildGallery(pullman),
+    cover: pullmanExpress,
+    gallery: buildGallery(pullmanExpress),
     description: {
       es: "Autocar versátil para excursiones y eventos masivos. La opción perfecta cuando necesitas mover grupos grandes con eficiencia.",
       en: "Versatile coach for excursions and massive events. The perfect choice when you need to move large groups efficiently.",

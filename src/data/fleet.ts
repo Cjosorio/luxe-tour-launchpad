@@ -4,6 +4,7 @@ import pullmanExpress from "@/assets/pullman-express.jpg";
 import hiace from "@/assets/hiace.jpg";
 import hiaceNew from "@/assets/hiace-new.jpg";
 import prado from "@/assets/prado.jpg";
+import pradoNew from "@/assets/prado-new.jpg";
 import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
 import interior from "@/assets/interior.jpg";
@@ -122,8 +123,8 @@ export const fleet: Vehicle[] = [
       en: "Land Cruiser Prado",
       pt: "Land Cruiser Prado",
     },
-    cover: prado,
-    gallery: buildGallery(prado),
+    cover: pradoNew,
+    gallery: buildGallery(pradoNew),
     badge: { es: "Exclusivo", en: "Exclusive", pt: "Exclusivo" },
     description: {
       es: "Land Cruiser Prado de lujo. Privacidad, confort total y la presencia que diplomáticos y traslados de alto nivel demandan.",

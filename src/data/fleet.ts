@@ -4,6 +4,7 @@ import pullmanExpress from "@/assets/pullman-express.jpg";
 import hiace from "@/assets/hiace.jpg";
 import prado from "@/assets/prado.jpg";
 import coaster from "@/assets/coaster.jpg";
+import coasterNew from "@/assets/coaster-new.jpg";
 import interior from "@/assets/interior.jpg";
 
 export interface Vehicle {
@@ -71,8 +72,8 @@ export const fleet: Vehicle[] = [
     id: "coaster",
     name: "Coaster",
     capacity: 26,
-    cover: coaster,
-    gallery: buildGallery(coaster),
+    cover: coasterNew,
+    gallery: buildGallery(coasterNew),
     description: {
       es: "Mini bus premium con parrilla para equipaje. Equilibrio perfecto entre capacidad y agilidad para grupos medianos y turismo interno.",
       en: "Premium minibus with luggage rack. Perfect balance between capacity and agility for medium groups and domestic tourism.",

@@ -17,32 +17,31 @@ export const Story = () => {
       <div aria-hidden className="absolute top-1/2 -translate-y-1/2 -right-32 h-[40rem] w-[40rem] rounded-full bg-secondary/8 blur-3xl pointer-events-none" />
 
       <div className="container relative">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          <div className="lg:col-span-5 relative">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-sm shadow-elegant">
-              <motion.img
-                src={history}
-                alt="Historia"
-                loading="lazy"
-                style={{ y }}
-                className="absolute inset-0 h-[115%] w-full object-cover"
-              />
-              <div className="absolute inset-0 ring-1 ring-inset ring-primary/30" />
-            </div>
-            {/* Floating badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute -bottom-8 -right-4 lg:-right-12 bg-card border border-border rounded-sm shadow-elegant p-6 text-center animate-float-y"
-            >
-              <div className="font-serif text-5xl gold-text leading-none">2001</div>
-              <div className="mt-2 text-[10px] tracking-[0.3em] uppercase text-muted-foreground">Desde</div>
-            </motion.div>
+        <div className="relative mb-16 md:mb-20">
+          <div className="relative aspect-[1200/771] w-full overflow-hidden rounded-sm shadow-elegant">
+            <motion.img
+              src={history}
+              alt="Historia"
+              loading="lazy"
+              style={{ y }}
+              className="absolute inset-0 h-[115%] w-full object-cover"
+            />
+            <div className="absolute inset-0 ring-1 ring-inset ring-primary/30" />
           </div>
+          {/* Floating badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute -bottom-8 right-4 lg:-right-6 bg-card border border-border rounded-sm shadow-elegant p-6 text-center animate-float-y"
+          >
+            <div className="font-serif text-5xl gold-text leading-none">2001</div>
+            <div className="mt-2 text-[10px] tracking-[0.3em] uppercase text-muted-foreground">Desde</div>
+          </motion.div>
+        </div>
 
-          <div className="lg:col-span-7 lg:pl-8">
+        <div className="max-w-4xl">
             <Reveal>
               <span className="label-eyebrow">{t.story.eyebrow}</span>
               <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance section-title">
@@ -77,7 +76,6 @@ export const Story = () => {
                 </div>
               </Reveal>
             </div>
-          </div>
         </div>
       </div>
     </section>

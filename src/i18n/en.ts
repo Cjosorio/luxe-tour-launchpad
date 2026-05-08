@@ -52,7 +52,7 @@ export const en: Dict = {
       "We provide safe, reliable, and punctual transportation services tailored to your needs.",
     items: [
       { title: "Airport transfers", desc: "On-time pickup and drop-off, flight tracking and 24/7 support." },
-      { title: "Tourist excursions", desc: "Guided routes and transfers to the most iconic destinations." },
+      { title: "Tourist transportation", desc: "Guided routes and transfers to the most iconic destinations." },
       { title: "Corporate transport", desc: "Executive mobility for companies, conventions and events." },
       { title: "Events & groups", desc: "Weddings, congresses and group transfers, flawlessly coordinated." },
     ],

@@ -50,7 +50,7 @@ export const es = {
       "Ofrecemos servicios de transporte seguros, confiables y puntuales, adaptados a tus necesidades.",
     items: [
       { title: "Traslados al aeropuerto", desc: "Recogida y entrega puntual, monitoreo de vuelos y atención 24/7." },
-      { title: "Excursiones turísticas", desc: "Rutas guiadas y traslados a los destinos más emblemáticos." },
+      { title: "Transporte turístico", desc: "Rutas guiadas y traslados a los destinos más emblemáticos." },
       { title: "Transporte corporativo", desc: "Movilidad ejecutiva para empresas, convenciones y eventos." },
       { title: "Eventos y grupos", desc: "Bodas, congresos y traslados grupales con coordinación impecable." },
     ],

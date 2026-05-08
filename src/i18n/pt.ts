@@ -52,7 +52,7 @@ export const pt: Dict = {
       "Oferecemos serviços de transporte seguros, confiáveis e pontuais, adaptados às suas necessidades.",
     items: [
       { title: "Transferências do aeroporto", desc: "Coleta e entrega pontuais, monitoramento de voos e atendimento 24/7." },
-      { title: "Excursões turísticas", desc: "Rotas guiadas e transferências para os destinos mais emblemáticos." },
+      { title: "Transporte turístico", desc: "Rotas guiadas e transferências para os destinos mais emblemáticos." },
       { title: "Transporte corporativo", desc: "Mobilidade executiva para empresas, convenções e eventos." },
       { title: "Eventos e grupos", desc: "Casamentos, congressos e transferências em grupo com coordenação impecável." },
     ],

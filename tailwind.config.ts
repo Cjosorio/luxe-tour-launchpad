@@ -64,7 +64,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        serif: ["'Cormorant Garamond'", "Georgia", "serif"],
+        serif: ["Montserrat", "system-ui", "sans-serif"],
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       backgroundImage: {

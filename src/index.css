@@ -85,9 +85,9 @@
     font-feature-settings: "ss01", "cv11";
   }
 
-  h1, h2, h3, h4, .font-serif {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 600;
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
     letter-spacing: -0.01em;
   }
 
@@ -152,8 +152,8 @@
 
   /* Eye-catching section header */
   .display-title {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 600;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1;
     background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--secondary)) 60%, hsl(var(--primary)) 100%);

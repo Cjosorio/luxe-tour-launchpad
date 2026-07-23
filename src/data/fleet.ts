@@ -10,6 +10,7 @@ import prado from "@/assets/prado.jpg";
 import pradoNew from "@/assets/prado-new.jpg";
 import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
+import coasterInterior from "@/assets/coaster-interior.jpg.asset.json";
 import interior from "@/assets/interior.jpg";
 
 export interface Vehicle {

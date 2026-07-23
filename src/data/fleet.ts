@@ -1,6 +1,7 @@
 import pullman from "@/assets/pullman.jpg";
 import pullmanPremium from "@/assets/pullman-premium.jpg";
 import pullmanExpress from "@/assets/pullman-express.jpg";
+import pullmanExpressInterior from "@/assets/pullman-express-interior.png.asset.json";
 import hiace from "@/assets/hiace.jpg";
 import hiaceNew from "@/assets/hiace-new.jpg";
 import prado from "@/assets/prado.jpg";
@@ -22,7 +23,7 @@ export interface Vehicle {
   badge?: { es: string; en: string; pt: string };
 }
 
-const buildGallery = (cover: string) => [cover, interior, cover, interior, cover];
+const buildGallery = (cover: string, interiorImg: string = interior) => [cover, interiorImg, cover, interiorImg, cover];
 
 export const fleet: Vehicle[] = [
   {

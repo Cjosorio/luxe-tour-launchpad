@@ -100,7 +100,7 @@ export const fleet: Vehicle[] = [
     name: "Hiace",
     capacity: 14,
     cover: hiaceNew,
-    gallery: buildGallery(hiaceNew),
+    gallery: buildGallery(hiaceNew, hiaceInterior.url),
     description: {
       es: "Van ejecutiva ágil y elegante. Perfecta para traslados ejecutivos, familias y grupos pequeños que valoran la discreción.",
       en: "Agile and elegant executive van. Perfect for executive transfers, families and small groups that value discretion.",

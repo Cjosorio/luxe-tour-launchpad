@@ -5,6 +5,7 @@ import pullmanExpress from "@/assets/pullman-express.jpg";
 import pullmanExpressInterior from "@/assets/pullman-express-interior.png.asset.json";
 import hiace from "@/assets/hiace.jpg";
 import hiaceNew from "@/assets/hiace-new.jpg";
+import hiaceInterior from "@/assets/hiace-interior.jpg.asset.json";
 import prado from "@/assets/prado.jpg";
 import pradoNew from "@/assets/prado-new.jpg";
 import coaster from "@/assets/coaster.jpg";
@@ -99,7 +100,7 @@ export const fleet: Vehicle[] = [
     name: "Hiace",
     capacity: 14,
     cover: hiaceNew,
-    gallery: buildGallery(hiaceNew),
+    gallery: buildGallery(hiaceNew, hiaceInterior.url),
     description: {
       es: "Van ejecutiva ágil y elegante. Perfecta para traslados ejecutivos, familias y grupos pequeños que valoran la discreción.",
       en: "Agile and elegant executive van. Perfect for executive transfers, families and small groups that value discretion.",

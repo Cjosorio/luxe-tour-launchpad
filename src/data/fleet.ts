@@ -5,6 +5,7 @@ import pullmanExpress from "@/assets/pullman-express.jpg";
 import pullmanExpressInterior from "@/assets/pullman-express-interior.png.asset.json";
 import hiace from "@/assets/hiace.jpg";
 import hiaceNew from "@/assets/hiace-new.jpg";
+import hiaceInterior from "@/assets/hiace-interior.jpg.asset.json";
 import prado from "@/assets/prado.jpg";
 import pradoNew from "@/assets/prado-new.jpg";
 import coaster from "@/assets/coaster.jpg";

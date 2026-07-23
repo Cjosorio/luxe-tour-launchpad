@@ -1,6 +1,7 @@
 import pullman from "@/assets/pullman.jpg";
 import pullmanPremium from "@/assets/pullman-premium.jpg";
 import pullmanExpress from "@/assets/pullman-express.jpg";
+import pullmanExpressInterior from "@/assets/pullman-express-interior.png.asset.json";
 import hiace from "@/assets/hiace.jpg";
 import hiaceNew from "@/assets/hiace-new.jpg";
 import prado from "@/assets/prado.jpg";
@@ -22,7 +23,7 @@ export interface Vehicle {
   badge?: { es: string; en: string; pt: string };
 }
 
-const buildGallery = (cover: string) => [cover, interior, cover, interior, cover];
+const buildGallery = (cover: string, interiorImg: string = interior) => [cover, interiorImg, cover, interiorImg, cover];
 
 export const fleet: Vehicle[] = [
   {
@@ -53,7 +54,7 @@ export const fleet: Vehicle[] = [
     name: "Pullman Express",
     capacity: 49,
     cover: pullmanExpress,
-    gallery: buildGallery(pullmanExpress),
+    gallery: buildGallery(pullmanExpress, pullmanExpressInterior.url),
     description: {
       es: "Autocar versátil para excursiones y eventos masivos. La opción perfecta cuando necesitas mover grupos grandes con eficiencia.",
       en: "Versatile coach for excursions and massive events. The perfect choice when you need to move large groups efficiently.",

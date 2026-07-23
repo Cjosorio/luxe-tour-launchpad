@@ -1,5 +1,5 @@
-// Replace with the real WhatsApp number (international format, no + or spaces).
-export const WHATSAPP_NUMBER = "595981000000";
+// Número corporativo de Transporte Castellanos para cotizaciones.
+export const WHATSAPP_NUMBER = "50499601944";
 
 export const SOCIAL = {
   instagram: "https://instagram.com/",

@@ -8,6 +8,7 @@ import hiaceNew from "@/assets/hiace-new.jpg";
 import hiaceInterior from "@/assets/hiace-interior.jpg.asset.json";
 import prado from "@/assets/prado.jpg";
 import pradoNew from "@/assets/prado-new.jpg";
+import pradoInterior from "@/assets/prado-interior.jpg.asset.json";
 import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
 import coasterInterior from "@/assets/coaster-interior.jpg.asset.json";

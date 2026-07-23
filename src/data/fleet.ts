@@ -10,6 +10,7 @@ import prado from "@/assets/prado.jpg";
 import pradoNew from "@/assets/prado-new.jpg";
 import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
+import coasterInterior from "@/assets/coaster-interior.jpg.asset.json";
 import interior from "@/assets/interior.jpg";
 
 export interface Vehicle {
@@ -78,7 +79,7 @@ export const fleet: Vehicle[] = [
     name: "Coaster",
     capacity: 26,
     cover: coasterNew,
-    gallery: buildGallery(coasterNew),
+    gallery: buildGallery(coasterNew, coasterInterior.url),
     description: {
       es: "Mini bus premium con parrilla para equipaje. Equilibrio perfecto entre capacidad y agilidad para grupos medianos y turismo interno.",
       en: "Premium minibus with luggage rack. Perfect balance between capacity and agility for medium groups and domestic tourism.",

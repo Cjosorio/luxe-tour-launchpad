@@ -129,7 +129,7 @@ export const fleet: Vehicle[] = [
       pt: "Land Cruiser Prado",
     },
     cover: pradoNew,
-    gallery: buildGallery(pradoNew),
+    gallery: buildGallery(pradoNew, pradoInterior.url),
     badge: { es: "Exclusivo", en: "Exclusive", pt: "Exclusivo" },
     description: {
       es: "Land Cruiser Prado de lujo. Privacidad, confort total y la presencia que diplomáticos y traslados de alto nivel demandan.",

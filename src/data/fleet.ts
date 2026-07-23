@@ -54,7 +54,7 @@ export const fleet: Vehicle[] = [
     name: "Pullman Express",
     capacity: 49,
     cover: pullmanExpress,
-    gallery: buildGallery(pullmanExpress),
+    gallery: buildGallery(pullmanExpress, pullmanExpressInterior.url),
     description: {
       es: "Autocar versátil para excursiones y eventos masivos. La opción perfecta cuando necesitas mover grupos grandes con eficiencia.",
       en: "Versatile coach for excursions and massive events. The perfect choice when you need to move large groups efficiently.",

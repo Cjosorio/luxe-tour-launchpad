@@ -1,5 +1,6 @@
 import pullman from "@/assets/pullman.jpg";
 import pullmanPremium from "@/assets/pullman-premium.jpg";
+import pullmanPremiumInterior from "@/assets/pullman-premium-interior.jpg.asset.json";
 import pullmanExpress from "@/assets/pullman-express.jpg";
 import pullmanExpressInterior from "@/assets/pullman-express-interior.png.asset.json";
 import hiace from "@/assets/hiace.jpg";
@@ -31,7 +32,7 @@ export const fleet: Vehicle[] = [
     name: "Pullman Premium",
     capacity: 50,
     cover: pullmanPremium,
-    gallery: buildGallery(pullmanPremium),
+    gallery: buildGallery(pullmanPremium, pullmanPremiumInterior.url),
     badge: { es: "Top de gama", en: "Top tier", pt: "Top de linha" },
     description: {
       es: "Nuestro autocar insignia con sanitario a bordo. Ideal para viajes largos internacionales y grupos exigentes que buscan máximo confort.",

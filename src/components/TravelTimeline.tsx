@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageSquare, CheckCircle, Bus, MapPin } from "lucide-react";
 
 interface TimelineStep {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   description: string;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
+import { SOCIAL } from "@/data/config";
 import { useI18n } from "@/i18n";
 import { Reveal } from "@/components/Reveal";
 import { fleet } from "@/data/fleet";

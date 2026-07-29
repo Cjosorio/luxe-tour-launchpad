@@ -100,6 +100,12 @@ export const es = {
       "Guatemala, El Salvador y Nicaragua",
       "Eventos corporativos",
     ],
+    timeline: [
+      { title: "Reserva", description: "Escríbenos por WhatsApp o llena el formulario con los detalles de tu viaje." },
+      { title: "Confirmación", description: "Te respondemos en minutos con precio, vehículo disponible y coordinación." },
+      { title: "Abordaje", description: "Tu conductor certificado llega puntual al punto acordado, listo para ayudarte." },
+      { title: "Destino", description: "Disfruta del trayecto con seguridad, confort y la tranquilidad de estar en buenas manos." },
+    ],
   },
   faq: {
     eyebrow: "Preguntas frecuentes",

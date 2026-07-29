@@ -102,6 +102,12 @@ export const en: Dict = {
       "Guatemala, El Salvador and Nicaragua",
       "Corporate events",
     ],
+    timeline: [
+      { title: "Booking", description: "Message us on WhatsApp or fill out the form with your trip details." },
+      { title: "Confirmation", description: "We reply within minutes with price, available vehicle and coordination." },
+      { title: "Boarding", description: "Your certified driver arrives on time at the agreed location, ready to help." },
+      { title: "Destination", description: "Enjoy the ride with safety, comfort and the peace of mind of being in good hands." },
+    ],
   },
   faq: {
     eyebrow: "Frequently asked",

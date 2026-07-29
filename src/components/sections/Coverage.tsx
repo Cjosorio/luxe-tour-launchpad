@@ -1,6 +1,6 @@
 import { useI18n } from "@/i18n";
 import { Reveal } from "@/components/Reveal";
-import { AnimatedMap } from "@/components/AnimatedMap";
+import { TravelTimeline } from "@/components/TravelTimeline";
 import { MapPin } from "lucide-react";
 
 export const Coverage = () => {
@@ -8,7 +8,7 @@ export const Coverage = () => {
   return (
     <section id="coverage" className="relative py-28 md:py-40 bg-card">
       <div className="container">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-5">
             <Reveal>
               <span className="label-eyebrow">{t.coverage.eyebrow}</span>
@@ -35,7 +35,7 @@ export const Coverage = () => {
 
           <div className="lg:col-span-7">
             <Reveal delay={0.15}>
-              <AnimatedMap />
+              <TravelTimeline steps={t.coverage.timeline} />
             </Reveal>
           </div>
         </div>

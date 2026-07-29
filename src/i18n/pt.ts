@@ -101,6 +101,12 @@ export const pt: Dict = {
       "Guatemala, El Salvador e Nicarágua",
       "Eventos corporativos",
     ],
+    timeline: [
+      { title: "Reserva", description: "Escreva pelo WhatsApp ou preencha o formulário com os detalhes da sua viagem." },
+      { title: "Confirmação", description: "Respondemos em minutos com preço, veículo disponível e coordenação." },
+      { title: "Embarque", description: "Seu motorista certificado chega pontualmente no local combinado, pronto para ajudar." },
+      { title: "Destino", description: "Aproveite o trajeto com segurança, conforto e a tranquilidade de estar em boas mãos." },
+    ],
   },
   faq: {
     eyebrow: "Perguntas frequentes",

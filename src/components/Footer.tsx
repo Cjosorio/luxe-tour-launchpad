@@ -63,9 +63,15 @@ export const Footer = () => {
                   className="h-10 w-10 rounded-full border border-secondary-foreground/30 grid place-items-center text-secondary-foreground/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
                 >
                   <Icon size={16} />
-                </a>
+              </a>
               ))}
             </div>
+            <a
+              href={SOCIAL.email}
+              className="mt-4 inline-block text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
+            >
+              transtourscaste@gmail.com
+            </a>
           </div>
         </div>
 

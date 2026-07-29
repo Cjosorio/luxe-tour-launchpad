@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
+import { SOCIAL } from "@/data/config";
 import { useI18n } from "@/i18n";
 import { Reveal } from "@/components/Reveal";
 import { fleet } from "@/data/fleet";
@@ -56,6 +57,13 @@ export const Contact = () => {
               >
                 <span className="text-sm tracking-[0.2em] uppercase">{t.cta.whatsappLong}</span>
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+              </a>
+              <a
+                href={SOCIAL.email}
+                className="mt-5 inline-flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
+              >
+                <Mail size={18} />
+                <span className="text-sm tracking-wide">transtourscaste@gmail.com</span>
               </a>
             </Reveal>
           </div>

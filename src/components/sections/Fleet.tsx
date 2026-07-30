@@ -257,9 +257,9 @@ export const Fleet = () => {
                       <button
                         key={i}
                         onClick={() => setSlide(i)}
-                        className={`aspect-square overflow-hidden rounded-sm transition-all ${i === slide ? "ring-2 ring-primary opacity-100" : "opacity-60 hover:opacity-100"}`}
+                        className={`aspect-square overflow-hidden rounded-sm bg-muted transition-all ${i === slide ? "ring-2 ring-primary opacity-100" : "opacity-60 hover:opacity-100"}`}
                       >
-                        <img src={img} alt="" className="h-full w-full object-cover" />
+                        <img src={img} alt="" className="h-full w-full object-contain" />
                       </button>
                     ))}
                   </div>

@@ -1,17 +1,17 @@
 import pullman from "@/assets/pullman.jpg";
 import pullmanPremium from "@/assets/pullman-premium.jpg";
-import pullmanPremiumInterior from "@/assets/pullman-premium-interior.jpg.asset.json";
+import pullmanPremiumInterior from "@/assets/pullman-premium-interior.jpg";
 import pullmanExpress from "@/assets/pullman-express.jpg";
-import pullmanExpressInterior from "@/assets/pullman-express-interior.png.asset.json";
+import pullmanExpressInterior from "@/assets/pullman-express-interior.png";
 import hiace from "@/assets/hiace.jpg";
 import hiaceNew from "@/assets/hiace-new.jpg";
-import hiaceInterior from "@/assets/hiace-interior.jpg.asset.json";
+import hiaceInterior from "@/assets/hiace-interior.jpg";
 import prado from "@/assets/prado.jpg";
 import pradoNew from "@/assets/prado-new.jpg";
-import pradoInterior from "@/assets/prado-interior.jpg.asset.json";
+import pradoInterior from "@/assets/prado-interior.jpg";
 import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
-import coasterInterior from "@/assets/coaster-interior.jpg.asset.json";
+import coasterInterior from "@/assets/coaster-interior.jpg";
 import interior from "@/assets/interior.jpg";
 
 export interface Vehicle {
@@ -35,7 +35,7 @@ export const fleet: Vehicle[] = [
     name: "Pullman Premium",
     capacity: 50,
     cover: pullmanPremium,
-    gallery: buildGallery(pullmanPremium, pullmanPremiumInterior.url),
+    gallery: buildGallery(pullmanPremium, pullmanPremiumInterior),
     badge: { es: "Top de gama", en: "Top tier", pt: "Top de linha" },
     description: {
       es: "Nuestro autocar insignia con sanitario a bordo. Ideal para viajes largos internacionales y grupos exigentes que buscan máximo confort.",
@@ -58,7 +58,7 @@ export const fleet: Vehicle[] = [
     name: "Pullman Express",
     capacity: 49,
     cover: pullmanExpress,
-    gallery: buildGallery(pullmanExpress, pullmanExpressInterior.url),
+    gallery: buildGallery(pullmanExpress, pullmanExpressInterior),
     description: {
       es: "Autocar versátil para excursiones y eventos masivos. La opción perfecta cuando necesitas mover grupos grandes con eficiencia.",
       en: "Versatile coach for excursions and massive events. The perfect choice when you need to move large groups efficiently.",
@@ -80,7 +80,7 @@ export const fleet: Vehicle[] = [
     name: "Coaster",
     capacity: 26,
     cover: coasterNew,
-    gallery: buildGallery(coasterNew, coasterInterior.url),
+    gallery: buildGallery(coasterNew, coasterInterior),
     description: {
       es: "Mini bus premium con parrilla para equipaje. Equilibrio perfecto entre capacidad y agilidad para grupos medianos y turismo interno.",
       en: "Premium minibus with luggage rack. Perfect balance between capacity and agility for medium groups and domestic tourism.",
@@ -102,7 +102,7 @@ export const fleet: Vehicle[] = [
     name: "Hiace",
     capacity: 14,
     cover: hiaceNew,
-    gallery: buildGallery(hiaceNew, hiaceInterior.url),
+    gallery: buildGallery(hiaceNew, hiaceInterior),
     description: {
       es: "Van ejecutiva ágil y elegante. Perfecta para traslados ejecutivos, familias y grupos pequeños que valoran la discreción.",
       en: "Agile and elegant executive van. Perfect for executive transfers, families and small groups that value discretion.",
@@ -129,7 +129,7 @@ export const fleet: Vehicle[] = [
       pt: "Land Cruiser Prado",
     },
     cover: pradoNew,
-    gallery: buildGallery(pradoNew, pradoInterior.url),
+    gallery: buildGallery(pradoNew, pradoInterior),
     badge: { es: "Exclusivo", en: "Exclusive", pt: "Exclusivo" },
     description: {
       es: "Land Cruiser Prado de lujo. Privacidad, confort total y la presencia que diplomáticos y traslados de alto nivel demandan.",

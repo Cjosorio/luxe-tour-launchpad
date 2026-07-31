@@ -13,6 +13,9 @@ import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
 import coasterInterior from "@/assets/coaster-interior.jpg";
 import interior from "@/assets/interior.jpg";
+import universe49 from "@/assets/universe-49.jpg";
+import universe49Interior1 from "@/assets/universe-49-interior-1.jpg";
+import universe49Interior2 from "@/assets/universe-49-interior-2.jpg";
 
 export interface Vehicle {
   id: string;

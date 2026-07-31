@@ -68,10 +68,26 @@ export const Hero = () => {
             {t.hero.subtitle}
           </motion.p>
 
+          {/* Prominent insurance announcement */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.65 }}
+            className="mt-8 inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-primary text-primary-foreground shadow-gold border border-primary/40"
+          >
+            <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-background/20">
+              <ShieldCheck size={18} className="text-primary-foreground" />
+              <span className="absolute inline-flex h-full w-full rounded-full bg-primary-foreground/30 animate-ping" />
+            </span>
+            <span className="text-sm md:text-base font-semibold tracking-wide leading-snug max-w-md">
+              {t.hero.announcement}
+            </span>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            transition={{ duration: 0.8, delay: 0.85 }}
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-start items-stretch sm:items-center"
           >
             <a

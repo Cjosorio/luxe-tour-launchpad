@@ -24,6 +24,7 @@ export const es = {
     titleAccent: "Castellanos",
     subtitle:
       "25 años con puntualidad, seguridad y confort en movimiento.",
+    announcement: "Vehículos asegurados con cobertura de daños y accidentes para pasajeros.",
     scroll: "Descubre",
     stats: [
       { n: "25", l: "Años de experiencia" },

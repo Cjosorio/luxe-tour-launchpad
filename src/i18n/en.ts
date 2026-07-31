@@ -26,6 +26,7 @@ export const en: Dict = {
     titleAccent: "Castellanos",
     subtitle:
       "25 years connecting people and destinations with safety, comfort and punctuality.",
+    announcement: "Vehicles insured with passenger damage and accident coverage.",
     scroll: "Discover",
     stats: [
       { n: "25", l: "Years of experience" },

@@ -56,7 +56,7 @@ export const fleet: Vehicle[] = [
   {
     id: "pullman-express",
     name: "Pullman Express",
-    capacity: 49,
+    capacity: 50,
     cover: pullmanExpress,
     gallery: buildGallery(pullmanExpress, pullmanExpressInterior),
     description: {

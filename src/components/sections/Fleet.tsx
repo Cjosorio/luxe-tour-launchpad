@@ -278,6 +278,13 @@ export const Fleet = () => {
                     <Users size={18} />
                     <span>{active.capacityLabel ? active.capacityLabel[lang] : `${active.capacity} ${t.fleet.pax}`}</span>
                   </div>
+
+                  {/* Insurance badge */}
+                  <div className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground shadow-md">
+                    <ShieldCheck size={18} className="text-primary" />
+                    <span className="text-sm font-semibold tracking-wide">{t.fleet.insuranceLabel}</span>
+                  </div>
+
                   <div className="gold-divider my-6 max-w-[120px]" />
                   <p className="text-muted-foreground leading-relaxed">{active.description[lang]}</p>
 

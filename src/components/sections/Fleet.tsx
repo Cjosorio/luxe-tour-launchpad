@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowUpRight, X, ChevronLeft, ChevronRight, Users, Sparkles } from "lucide-react";
+import { ArrowUpRight, X, ChevronLeft, ChevronRight, Users, Sparkles, ShieldCheck } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useI18n } from "@/i18n";
 import { Reveal } from "@/components/Reveal";

@@ -116,6 +116,7 @@ export const Hero = () => {
         <div className="flex gap-12 animate-marquee whitespace-nowrap">
           {[...Array(2)].map((_, idx) => (
             <div key={idx} className="flex gap-12 items-center px-6 text-sm tracking-[0.2em] uppercase">
+              <span className="flex items-center gap-2 font-semibold"><ShieldCheck size={16} className="text-primary" /> {t.hero.announcement}</span>
               <span className="flex items-center gap-2"><ShieldCheck size={16} className="text-primary" /> Seguros vigentes</span>
               <span className="flex items-center gap-2"><Star size={16} className="text-primary" /> 25 años</span>
               <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Honduras</span>

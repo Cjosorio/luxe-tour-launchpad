@@ -65,6 +65,7 @@ export const en: Dict = {
     capacityLabel: "Capacity",
     featuresLabel: "Features",
     idealLabel: "Ideal for",
+    insuranceLabel: "Insured vehicle with passenger coverage",
     pax: "passengers",
   },
   story: {

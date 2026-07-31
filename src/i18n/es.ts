@@ -63,6 +63,7 @@ export const es = {
     capacityLabel: "Capacidad",
     featuresLabel: "Características",
     idealLabel: "Ideal para",
+    insuranceLabel: "Vehículo asegurado con cobertura para pasajeros",
     pax: "pasajeros",
   },
   story: {

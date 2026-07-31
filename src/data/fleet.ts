@@ -13,6 +13,9 @@ import coaster from "@/assets/coaster.jpg";
 import coasterNew from "@/assets/coaster-new.jpg";
 import coasterInterior from "@/assets/coaster-interior.jpg";
 import interior from "@/assets/interior.jpg";
+import universe49 from "@/assets/universe-49.jpg";
+import universe49Interior1 from "@/assets/universe-49-interior-1.jpg";
+import universe49Interior2 from "@/assets/universe-49-interior-2.jpg";
 
 export interface Vehicle {
   id: string;
@@ -95,6 +98,28 @@ export const fleet: Vehicle[] = [
       es: "Grupos medianos y turismo interno",
       en: "Medium groups and domestic tourism",
       pt: "Grupos médios e turismo interno",
+    },
+  },
+  {
+    id: "universe-49",
+    name: "Universe Turismo",
+    capacity: 49,
+    cover: universe49,
+    gallery: [universe49, universe49Interior1, universe49Interior2, universe49, universe49Interior1],
+    description: {
+      es: "Autocar de turismo para 49 pasajeros, sin sanitario a bordo. Cómodo, moderno y equipado con cargadores USB para viajes en grupo.",
+      en: "Tourism coach for 49 passengers, no onboard restroom. Comfortable, modern and equipped with USB chargers for group travel.",
+      pt: "Ônibus de turismo para 49 passageiros, sem sanitário a bordo. Confortável, moderno e equipado com carregadores USB.",
+    },
+    features: {
+      es: ["49 pasajeros", "Sin sanitario a bordo", "Cargadores USB", "Aire acondicionado", "Seguro de daños a terceros"],
+      en: ["49 passengers", "No onboard restroom", "USB chargers", "Air conditioning", "Third-party insurance"],
+      pt: ["49 passageiros", "Sem sanitário a bordo", "Carregadores USB", "Ar condicionado", "Seguro de danos a terceiros"],
+    },
+    ideal: {
+      es: "Grupos grandes y excursiones",
+      en: "Large groups and excursions",
+      pt: "Grupos grandes e excursões",
     },
   },
   {

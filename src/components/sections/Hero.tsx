@@ -68,10 +68,26 @@ export const Hero = () => {
             {t.hero.subtitle}
           </motion.p>
 
+          {/* Prominent insurance announcement */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.65 }}
+            className="mt-8 inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-primary text-primary-foreground shadow-gold border border-primary/40"
+          >
+            <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-background/20">
+              <ShieldCheck size={18} className="text-primary-foreground" />
+              <span className="absolute inline-flex h-full w-full rounded-full bg-primary-foreground/30 animate-ping" />
+            </span>
+            <span className="text-sm md:text-base font-semibold tracking-wide leading-snug max-w-md">
+              {t.hero.announcement}
+            </span>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            transition={{ duration: 0.8, delay: 0.85 }}
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-start items-stretch sm:items-center"
           >
             <a
@@ -116,7 +132,7 @@ export const Hero = () => {
         <div className="flex gap-12 animate-marquee whitespace-nowrap">
           {[...Array(2)].map((_, idx) => (
             <div key={idx} className="flex gap-12 items-center px-6 text-sm tracking-[0.2em] uppercase">
-              <span className="flex items-center gap-2 font-semibold"><ShieldCheck size={16} className="text-primary" /> {t.hero.announcement}</span>
+              
               <span className="flex items-center gap-2"><ShieldCheck size={16} className="text-primary" /> Seguros vigentes</span>
               <span className="flex items-center gap-2"><Star size={16} className="text-primary" /> 25 años</span>
               <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Honduras</span>
